@@ -1,0 +1,270 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+    background-color: black;
+    color: white;
+
+    margin: 0;
+    padding: 0;
+
+    line-height: 1.6;
+}
+
+.portfolio-container {
+    display: grid;
+
+    grid-template-areas:
+        "header"
+        "main"
+        "footer"
+    ;
+
+    grid-template-rows: auto auto 1fr auto;
+}
+
+/*header*/
+.header {
+    grid-area: header;
+
+    padding: 15px 0;
+
+    background: #1e1e1e;
+    border-bottom: 2px solid #9dff00;
+
+    align-items: center;
+}
+
+.logo_superior {
+    width: 150px;
+    max-width: 100%;
+
+    height: auto;
+    margin: 15px
+}
+
+.botones {
+    display: grid;
+    grid-auto-flow: column;
+
+    justify-content: center;
+    gap: 20px;
+}
+
+.botones a {
+    text-decoration: none;
+
+    color: #e1e1e1;
+
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.botones a:hover {
+    color: #9dff00;
+}
+
+.main {
+    grid-area: main;
+}
+
+h1,
+h2,
+h3 {
+    color: white;
+}
+
+#title {
+    text-align: center;
+    font-size: 35px;
+    margin-bottom: 20px;
+}
+
+section {
+    margin-top: 30px;
+}
+
+/*introduccion*/
+.introduction p {
+    padding: 0 100px;
+    margin: 0 auto;
+    max-width: 1000px;
+
+    text-align: justify;
+}
+
+/*tabla wiki*/
+.wiki_table {
+    border-collapse: collapse;
+
+    margin-top: 20px;
+    width: 80%;
+    margin: 0 auto;
+
+    background: #1c1c1c;
+
+
+}
+
+.wiki_table th,
+.wiki_table td {
+    padding: 10px;
+
+    text-align: left;
+
+    border: 1px solid #333;
+}
+
+.wiki_table .title_table {
+    text-align: center;
+
+    font-size: 19px;
+
+    background: #c0392b;
+    color: white;
+}
+
+.wiki_table img {
+    display: block;
+    margin: auto;
+
+    width: 100%;
+    max-width: 300px;
+}
+
+/*personaje*/
+.personaje {
+    display: flex;
+    flex-direction: column;
+
+    gap: 20px;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+
+.description {
+    padding: 20px;
+
+    background: #1c1c1c;
+
+    border-radius: 10px;
+    border-left: 4px solid #c0392b;
+}
+
+
+.description img {
+    width: 200px;
+    float: left;
+
+    margin-right: 15px;
+
+    border-radius: 8px;
+}
+
+
+.description p {
+    text-align: justify;
+    margin-bottom: 2%;
+}
+
+
+/*video*/
+.video {
+    text-align: left;
+
+    gap: 20px;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+.video_sekiro {
+    text-align: center;
+    border-left: 4px solid #c0392b;
+}
+
+/*premios*/
+.premios {
+    gap: 20px;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+.premios table {
+    border-collapse: collapse;
+
+    margin-top: 20px;
+    width: 100%;
+}
+
+.premios th,
+.premios td {
+    padding: 10px;
+
+    text-align: center;
+
+    border: 1px solid #333;
+}
+
+.premios th {
+    background: #222;
+}
+
+.ganador {
+    font-weight: bold;
+
+    color: #2ecc71;
+}
+
+.nominado {
+    color: #f1c40f;
+}
+
+/*footer*/
+.footer {
+    grid-area: footer;
+    text-align: center;
+    padding: 20px;
+    background: #1a1a1a;
+    margin-top: 40px;
+    border-top: 2px solid #ff1212;
+}
+
+@media (max-width: 768px) {
+
+    .introduction p,
+    .personaje,
+    .video,
+    .premios {
+        padding: 0 15px;
+        max-width: 1000px;
+        margin: 0 auto;
+    }
+
+    #title {
+        font-size: 24px;
+    }
+
+    .botones {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        justify-content: center;
+    }
+
+    .wiki_table {
+        width: 95%;
+        display: block;
+    }
+
+    .description {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .description img {
+        float: none;
+        margin: 0 auto;
+        width: 100%;
+        max-width: 250px;
+    }
+}
