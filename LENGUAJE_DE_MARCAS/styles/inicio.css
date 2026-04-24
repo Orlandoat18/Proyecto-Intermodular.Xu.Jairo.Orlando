@@ -10,11 +10,11 @@
 }
 
 body{
-   background:black;
+   background:rgb(0, 0, 0);
 }
 
 .titulo-seccion{
-   color:white;
+   color:rgb(255, 255, 255);
    text-align:center;
    font-size:38px;
    margin:50px 0;
@@ -31,43 +31,46 @@ body{
 .tarjeta{
    width:220px;
    height:520px;
+   border-radius: 10px;
    position:relative;
    overflow:hidden;
-   border-radius:10px;
 
+   display: flex;
+   flex-direction: column;
+
+   background-color: black;
+   box-shadow:0px 0px 20px rgba(0, 255, 0, 0.4);
+      
    transform:skew(-5deg);
    transition:0.4s;
-   cursor:pointer;
 }
 
-.tarjeta img{
+.img_tarjeta{
+   height: 70%;
+   overflow: hidden;
+}
+
+.img_tarjeta img{
    width:100%;
    height:100%;
-   object-fit: contain;
-   background:black;
+   object-fit:cover;
+   object-position: top;
 }
 
-.tarjeta h3{
-    position:absolute;
-    top:18px;
-    left:12px;
-    right:12px;
-
-    color:white;
-    font-size:18px;
-    line-height:1.1;
-    z-index:2;
-
-    word-wrap:break-word;
+.tarjeta h4{
+   font-size:16px;
+   margin:10px;
+   color:white;
 }
 
 .tarjeta p{
-   position:absolute;
-   bottom:25px;
-   left:15px;
-   color:white;
-   width:auto;
-   z-index:2;
+   margin:0 10px;
+   font-size:13px;
+   color:gray;
+}
+
+.tarjeta .genero{
+   color: #00ff3c9d;
 }
 
 .tarjeta:hover{

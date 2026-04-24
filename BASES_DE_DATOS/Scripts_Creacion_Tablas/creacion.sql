@@ -74,8 +74,8 @@ create table ModoDeJuego(
 create table Videojuego(
     Id_Videojuego int not null auto_increment,
     Titulo varchar(150) not null,
-    Descripcion_Videojuego text not null ,
-    Clasificacion_edad varchar(10) not null ,
+    Descripcion_Videojuego text not null,
+    Clasificacion_edad varchar(10) not null,
     Imagen_portada varchar(255) not null,
     primary key (Id_Videojuego),
     foreign key (Id_Desarrollador) references Desarrollador(Id_Desarrollador)
