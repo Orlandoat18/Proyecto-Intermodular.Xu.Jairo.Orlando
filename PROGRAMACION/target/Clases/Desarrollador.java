@@ -1,5 +1,3 @@
-
-
 public class Desarrollador {
     // Atributos
     private String id_Desarrollador;
@@ -11,15 +9,8 @@ public class Desarrollador {
     private String descripcion_Des;
 
     // Constructor
-
-    // Getters and setters
-    public String getId_Desarrollador() {
-        return Id_Desarrollador;
-    }
-
     public Desarrollador(String id_Desarrollador, String nombre_Desarrollador, String pais_Desarrollador,
-            String ciudad_Desarrollador, String fecha_fundacion_Des, String sitio_web_Des, String descripcion_Des) {
-
+    String ciudad_Desarrollador, String fecha_fundacion_Des, String sitio_web_Des, String descripcion_Des) {
         this.id_Desarrollador = id_Desarrollador;
         this.nombre_Desarrollador = nombre_Desarrollador;
         this.pais_Desarrollador = pais_Desarrollador;
@@ -27,6 +18,11 @@ public class Desarrollador {
         this.fecha_fundacion_Des = fecha_fundacion_Des;
         this.sitio_web_Des = sitio_web_Des;
         this.descripcion_Des = descripcion_Des;
+    }
+
+    // Getters y setters
+    public String getId_Desarrollador() {
+        return Id_Desarrollador;
     }
 
     public void setId_Desarrollador(String id_Desarrollador) {
@@ -80,5 +76,4 @@ public class Desarrollador {
     public void setDescripcion_Des(String descripcion_Des) {
         this.descripcion_Des = descripcion_Des;
     }
-
 }
