@@ -7,59 +7,126 @@
    color:#9dff00;
    font-size:22px;
    cursor:pointer;
+    position:absolute;
+    top:18px;
+    right:25px;
+}
+
+header p{
+    position:absolute;
+    top:62px;
+    left:70px;
+
+    color:#cfcfcf;
+    font-size:12px;
+    font-weight:600;
+    font-family:Arial, Helvetica, sans-serif;
+    letter-spacing:0.4px;
 }
 
 body{
-   background:rgb(0, 0, 0);
+   background:black;
+
 }
 
+
 .titulo-seccion{
-   color:rgb(255, 255, 255);
+   color:white;
    text-align:center;
    font-size:38px;
    margin:50px 0;
 }
 
+
 .contenedor{
-   display:flex;
-   justify-content:center;
-   gap:18px;
-   flex-wrap:wrap;
-   padding:20px;
+    display:flex;
+    gap:18px;
+    overflow-x:auto;
+    cursor:grab;
+    user-select:none;
+    scroll-behavior:none;
+}
+
+.contenedor:active{
+    cursor:grabbing;
+}
+
+.contenedor::-webkit-scrollbar{
+   display:none;
 }
 
 .tarjeta{
    width:220px;
    height:520px;
-   border-radius: 10px;
+   flex-shrink:0;
    position:relative;
    overflow:hidden;
-
-   display: flex;
-   flex-direction: column;
-
-   background-color: black;
-   box-shadow:0px 0px 20px rgba(0, 255, 0, 0.4);
-      
+   display:flex;
+   flex-direction:column;
+   border-radius:10px;
+   background:black;
+   box-shadow:0 0 20px rgba(0,255,0,0.4);
    transform:skew(-5deg);
    transition:0.4s;
+   
 }
 
+.tarjeta:hover{
+   transform:skew(-5deg) scale(1.05);
+}
+
+
 .img_tarjeta{
-   height: 70%;
-   overflow: hidden;
+   height:70%;
+   overflow:hidden;
 }
 
 .img_tarjeta img{
    width:100%;
    height:100%;
    object-fit:cover;
-   object-position: top;
+   object-position:top;
 }
 
+.Img_Computadora{
+    width:560px;
+    height:auto;
+    display:block;
+    margin-left:auto;
+    position: relative;
+   top: 95px
+}
+
+.logo_superior_header{
+   width: 150px;
+    max-width: 100%;
+    height: auto;
+    margin: 20px 10px 0px 20px;
+    top: -40px;
+}
+
+.Logo_superior_izq{
+    width:520px;
+    height:auto;
+    position:relative;
+    top:-120px;
+}
+
+
+
+.bienvenido{
+   font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size:20px;
+    font-weight:bold;
+    color:#9dff00;
+    position:relative;
+    top:-115px;
+}
+
+
 .tarjeta h4{
-   font-size:16px;
    margin:10px;
+   font-size:16px;
    color:white;
 }
 
@@ -70,9 +137,54 @@ body{
 }
 
 .tarjeta .genero{
-   color: #00ff3c9d;
+   color:#00ff3c9d;
 }
 
-.tarjeta:hover{
-   transform:skew(-5deg) scale(1.05);
+#Explorar_juegos{
+    width:170px;
+    height:42px;
+    background:#9dff00;
+    color:black;
+    border:none;
+    border-radius:4px;
+    font-size:13px;
+    font-weight:bold;
+    text-transform:uppercase;
+    cursor:pointer;
+}
+
+#btnComunidad{
+    width:210px;
+    height:42px;
+    background:transparent;
+    color:#9dff00;
+    border:1px solid #9dff00;
+    border-radius:4px;
+    font-size:13px;
+    font-weight:bold;
+    text-transform:uppercase;
+    cursor:pointer;
+}
+
+.botones_header{
+    display:flex;
+    align-items:center;
+    gap:35px;
+
+    position:absolute;
+    top:18px;
+    left:420px;
+}
+
+.botones_header a{
+    font-family:Arial, Helvetica, sans-serif;
+    letter-spacing:0.5px;
+    color:#cfcfcf;
+    text-decoration:none;
+    font-size:14px;
+    font-weight:700;
+    text-transform:uppercase;
+    padding:14px 0;
+    position:relative;
+    transition:0.3s;
 }
