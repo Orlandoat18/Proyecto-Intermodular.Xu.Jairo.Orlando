@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.media.MediaView?>
+
+<StackPane xmlns:fx="http://javafx.com/fxml"
+           fx:controller="proyecto.code.controller.EntradaController"
+           stylesheets="/styles/index.css"
+           styleClass="portfolio-container">
+
+    <!-- 视频背景 -->
+    <MediaView fx:id="videoFondo"
+               preserveRatio="false"
+               styleClass="video-fondo"/>
+
+    <!-- 前景内容 -->
+    <VBox spacing="15"
+          alignment="CENTER"
+          maxWidth="800"
+          maxHeight="600">
+
+        <padding>
+            <Insets top="20" right="20" bottom="20" left="20"/>
+        </padding>
+
+        <ImageView fx:id="logoSuperior"
+                   fitWidth="200"
+                   preserveRatio="true"
+                   styleClass="logo_superior"/>
+
+        <ImageView fx:id="logoCentral"
+                   fitWidth="300"
+                   preserveRatio="true"
+                   styleClass="logo_central"/>
+
+        <Label text="LA WIKI RETRO DE LOS VIDEOJUEGOS"
+               styleClass="title"/>
+
+        <Label text="La enciclopedia colaborativa dedicada a los videojuegos clásicos.\nDescubre, aprende y comparte la historia del videojuego retro."
+               wrapText="true"
+               styleClass="text"/>
+
+        <Button text="Inicio"
+                fx:id="btnEntrar"
+                onAction="#irInicio"
+                styleClass="btn-entrar"/>
+
+        <Label text="© 2026 Arcadepedia. Todos los derechos reservados."
+               styleClass="footer-text"/>
+    </VBox>
+
+</StackPane>
