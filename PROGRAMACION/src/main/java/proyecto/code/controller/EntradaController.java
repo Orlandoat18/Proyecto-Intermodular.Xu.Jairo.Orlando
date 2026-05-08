@@ -14,9 +14,6 @@ public class EntradaController {
     private MediaView videoFondo;
 
     @FXML
-    private ImageView logoSuperior;
-
-    @FXML
     private ImageView logoCentral;
 
     private final EntradaService entradaService = new EntradaService();
@@ -24,11 +21,10 @@ public class EntradaController {
     @FXML
     public void initialize() throws initializeException{
         try {
-            // 🎥 Video
+            // Video
             entradaService.cargarVideo(videoFondo, "/img/estrellas.mp4");
 
-            // 🖼️ Imágenes
-            entradaService.cargarImagen(logoSuperior, "/img/PAGINA_LOGO.jpg");
+            // Imagenes
             entradaService.cargarImagen(logoCentral, "/img/PAGINA_LOGO.jpg");
 
         } catch (Exception e) {

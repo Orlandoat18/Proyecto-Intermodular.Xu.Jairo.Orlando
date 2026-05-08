@@ -10,6 +10,7 @@ import proyecto.code.exceptions.initializeException;
 import java.net.URL;
 
 public class EntradaService {
+
     public void cargarVideo(MediaView mediaView, String ruta) throws initializeException{
 
         URL recurso = getClass().getResource(ruta);

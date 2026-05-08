@@ -1,43 +1,31 @@
 .root {
     -fx-background-color: black;
-    -fx-font-family: "Gill Sans", "Calibri", "Trebuchet MS", sans-serif;
+    -fx-font-family: "Impact", fantasy;
 }
 
-/* VIDEO DE FONDO */
+/*video de fondo*/
 #videoFondo {
     -fx-opacity: 0.4; /* simula brightness(0.4) */
 }
 
-/* HEADER */
-.header {
-    -fx-alignment: center;
-    -fx-padding: 20 10 0 20;
-}
-
-/* LOGO SUPERIOR */
-#logoSuperior {
-    -fx-fit-height: 80;
-    -fx-preserve-ratio: true;
-}
-
-/* MAIN */
+/*main*/
 .main {
     -fx-alignment: center;
 }
 
-/* LOGO CENTRAL */
+/*logo central*/
 #logoCentral {
     -fx-fit-height: 120;
     -fx-preserve-ratio: true;
 }
 
-/* TODOS LOS LABELS */
+/*label*/
 .label {
     -fx-text-fill: white;
     -fx-text-alignment: center;
 }
 
-/* TÍTULO (primer label dentro de .main) */
+/*label dentro de .main*/
 .main .label {
     -fx-font-size: 20px;
     -fx-font-weight: bold;
@@ -49,7 +37,7 @@
     -fx-max-width: 600;
 }
 
-/* BOTÓN */
+/*boton*/
 #btnEntrar {
     -fx-background-color: transparent;
     -fx-border-color: #9dff00;
@@ -61,18 +49,18 @@
     -fx-pref-height: 55;
 }
 
-/* HOVER BOTÓN */
+/*hover de boton*/
 #btnEntrar:hover {
     -fx-background-color: #9dff00;
     -fx-text-fill: black;
 }
 
-/* FOOTER */
+/*footer*/
 .footer {
     -fx-alignment: center;
 }
 
-/* TEXTO FOOTER */
+/*label footer*/
 .footer .label {
     -fx-text-fill: white;
     -fx-font-size: 14px;
