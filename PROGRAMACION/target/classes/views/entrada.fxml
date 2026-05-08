@@ -22,13 +22,16 @@
 
             <ImageView fx:id="logoCentral" id="logoCentral" fitHeight="120" preserveRatio="true"/>
 
-            <Label text="LA WIKI RETRO DE LOS VIDEOJUEGOS"/>
+            <Label text="LA WIKI RETRO DE LOS VIDEOJUEGOS"
+                   styleClass="titulo"/>
 
             <Label text="La enciclopedia colaborativa dedicada a los videojuegos clásicos"
-                   textAlignment="CENTER"/>
+                   textAlignment="CENTER"
+                   styleClass="descripcion"/>
 
             <Label text="Descubre, aprende y comparte la historia del videojuego retro"
-                   textAlignment="CENTER"/>
+                   textAlignment="CENTER"
+                   styleClass="descripcion"/>
 
             <Button text="Inicio" fx:id="btnEntrar" id="btnEntrar"/>
 
