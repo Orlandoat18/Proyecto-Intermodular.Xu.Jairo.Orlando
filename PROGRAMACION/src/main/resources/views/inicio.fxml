@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.scene.image.ImageView?>
+
+<ScrollPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="CONTROLLER_NAME"
+            prefHeight="400.0" prefWidth="600.0">
+
+    <VBox spacing="20">
+
+        <!--header-->
+        <HBox alignment="CENTER" spacing="20">
+
+            <Button text="Inicio"/>
+            <Button text="Juegos"/>
+            <Button text="Sobre nosotros"/>
+            <Button text="Inicia sesión"/>
+
+            <Region HBox.hgrow="ALWAYS"/>
+
+            <ImageView fx:id="logoHeader" id="logoHeader" fitHeight="60" fitWidth="60"/>
+
+            <Label text="LA WIKI RETRO DE LOS VIDEOJUEGOS"/>
+
+        </HBox>
+
+        <!--main-->
+        <VBox alignment="CENTER" spacing="15">
+
+            <ImageView fx:id="image_dibujo" id="image_dibujo" fitHeight="250" fitWidth="400"/>
+
+            <Label text="BIENVENIDO A"/>
+
+            <ImageView fx:id="logoMain" id="logoMain" fitHeight="120" fitWidth="120"/>
+
+            <Label wrapText="true" maxWidth="600"
+                   text="La enciclopedia colaborativa dedicada a los videojuegos clásicos. Descubre, aprende y comparte la historia del videojuego retro"/>
+
+        </VBox>
+
+        <!--titulo-->
+        <Label text="EXPLORAR JUEGOS CLÁSICOS"/>
+
+        <!--tarjetas-->
+        <FlowPane hgap="20" vgap="20" prefWrapLength="1000">
+
+            <!--tarjeta_Sekiro-->
+            <VBox spacing="10" alignment="CENTER">
+
+                <ImageView fx:id="tarjeta_Sekiro" id="tarjeta" fitWidth="180" fitHeight="220"/>
+
+                <Label text="Sekiro: Shadows Die Twice"/>
+
+                <Label text="2019"/>
+
+                <Label text="Acción y Aventura"/>
+
+            </VBox>
+
+            <!--tarjeta_Minecraft-->
+            <VBox spacing="10" alignment="CENTER">
+
+                <ImageView fx:id="tarjeta_Minecraft" id="tarjeta" fitWidth="180" fitHeight="220"/>
+
+                <Label text="Minecraft"/>
+
+                <Label text="2011"/>
+
+                <Label text="Mundo abierto y supervivencia"/>
+
+            </VBox>
+
+            <!--tarjeta_LOL-->
+            <VBox spacing="10" alignment="CENTER">
+
+                <ImageView fx:id="tarjeta_LOL" id="tarjeta" fitWidth="180" fitHeight="220"/>
+
+                <Label text="League of Legends"/>
+
+                <Label text="2009"/>
+
+                <Label text="Multijugador"/>
+
+            </VBox>
+
+            <!--tarjeta_Elden-->
+            <VBox spacing="10" alignment="CENTER">
+
+                <ImageView fx:id="tarjeta_Elden" id="tarjeta" fitWidth="180" fitHeight="220"/>
+
+                <Label text="Elden Ring"/>
+
+                <Label text="2022"/>
+
+                <Label text="Rol de Acción y Soulslike"/>
+
+            </VBox>
+
+            <!--tarjeta_GodWar-->
+            <VBox spacing="10" alignment="CENTER">
+
+                <ImageView fx:id="tarjeta_GodWar" id="tarjeta" fitWidth="180" fitHeight="220"/>
+
+                <Label text="God of War Ragnarok"/>
+
+                <Label text="2022"/>
+
+                <Label text="Acción y Aventura"/>
+
+            </VBox>
+
+            <!--tarjeta_HK-->
+            <VBox spacing="10" alignment="CENTER">
+
+                <ImageView fx:id="tarjeta_HK" id="tarjeta_Sekiro" fitWidth="180" fitHeight="220"/>
+
+                <Label text="Hollow Knight"/>
+
+                <Label text="2017"/>
+
+                <Label text="Acción y Aventura"/>
+
+            </VBox>
+
+            <!--tarjeta_AL-->
+            <VBox spacing="10" alignment="CENTER">
+
+                <ImageView fx:id="tarjeta_AL" id="tarjeta" fitWidth="180" fitHeight="220"/>
+
+                <Label text="Asphalt Legends"/>
+
+                <Label text="2018"/>
+
+                <Label text="Carreras"/>
+
+            </VBox>
+        </FlowPane>
+
+    </VBox>
+
+</ScrollPane>
+
