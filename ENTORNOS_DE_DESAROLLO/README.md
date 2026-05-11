@@ -13,11 +13,17 @@
 
 # Tecnologías usadas:
 · Módulo Bases de datos -> Creación del diagrama E-R (draw.io) / Modelo relacional (Bloc de notas) / Scripts (MySQL Workbench)
+
 . Módulo de Entornos de Desarollo -> Organización de carpetas, recursos y documentación del proyecto (Git, GitHub)
+
 . Módulo de Lenguaje de Marcas -> Creación de la página web con Visual Studio (HTML5, CSS)
+
 . Módulo de Programación -> Creación de los paquetes correspondientes y del código (IntelliJ IDEA) / Conexión con la base de datos  (JDBC)
+
 . Módulo de Sistemas Informáticos -> 
+
 . Módulo MPO -> Organización del código y estructuramiento (IntelliJ IDEA)
+
 . Módulo Itinerario personal para la empleabilidad -> 
 
 # Instrucciones básicas de instalación/ejecución
