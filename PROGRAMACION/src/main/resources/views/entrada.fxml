@@ -33,7 +33,7 @@
                    textAlignment="CENTER"
                    styleClass="descripcion"/>
 
-            <Button text="Inicio" fx:id="btnEntrar" id="btnEntrar"/>
+            <Button text="Inicio" fx:id="btnEntrar" id="btnEntrar" onAction="#irInicio"/>
 
         </VBox>
 

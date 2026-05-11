@@ -5,18 +5,18 @@ import javafx.scene.image.ImageView;
 import javafx.scene.media.Media;
 import javafx.scene.media.MediaPlayer;
 import javafx.scene.media.MediaView;
-import proyecto.code.exceptions.initializeException;
+import proyecto.code.exceptions.cargaException;
 
 import java.net.URL;
 
 public class EntradaService {
 
-    public void cargarVideo(MediaView mediaView, String ruta) throws initializeException{
+    public void cargarVideo(MediaView mediaView, String ruta) throws cargaException {
 
         URL recurso = getClass().getResource(ruta);
 
         if (recurso == null) {
-            throw new initializeException("No se encontró el video: " + ruta);
+            throw new cargaException("No se encontró el video: " + ruta);
         }
 
         Media media = new Media(recurso.toExternalForm());
@@ -29,12 +29,12 @@ public class EntradaService {
         mediaView.setMediaPlayer(player);
     }
 
-    public void cargarImagen(ImageView imageView, String ruta) throws initializeException{
+    public void cargarImagen(ImageView imageView, String ruta) throws cargaException {
 
         URL recurso = getClass().getResource(ruta);
 
         if (recurso == null) {
-            throw new initializeException("No se encontró la imagen: " + ruta);
+            throw new cargaException("No se encontró la imagen: " + ruta);
         }
 
         Image img = new Image(recurso.toExternalForm());
