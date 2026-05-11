@@ -16,8 +16,8 @@ public class ArcadepediaMain extends Application {
         stage.setScene(new Scene(root));
 
         stage.setTitle("Arcadepedia");
-        stage.sizeToScene();
-
+        stage.setWidth(800);
+        stage.setHeight(600);
         stage.setResizable(false);
         stage.centerOnScreen();
 

@@ -10,7 +10,8 @@
 
 <ScrollPane xmlns="http://javafx.com/javafx"
             xmlns:fx="http://javafx.com/fxml"
-            fx:controller="CONTROLLER_NAME"
+            stylesheets="/styles/inicio.css"
+            fx:controller="proyecto.code.controller.InicioController"
             prefHeight="400.0" prefWidth="600.0">
 
     <VBox spacing="20">
@@ -52,9 +53,9 @@
         <FlowPane hgap="20" vgap="20" prefWrapLength="1000">
 
             <!--tarjeta_Sekiro-->
-            <VBox spacing="10" alignment="CENTER">
+            <VBox fx:id="tarjeta_Sekiro" id="tarjeta" onMouseClicked="" spacing="10" alignment="CENTER">
 
-                <ImageView fx:id="tarjeta_Sekiro" id="tarjeta" fitWidth="180" fitHeight="220"/>
+                <ImageView fx:id="img_Sekiro" fitWidth="180" fitHeight="220"/>
 
                 <Label text="Sekiro: Shadows Die Twice"/>
 
@@ -65,9 +66,9 @@
             </VBox>
 
             <!--tarjeta_Minecraft-->
-            <VBox spacing="10" alignment="CENTER">
+            <VBox fx:id="tarjeta_Minecraft" id="tarjeta" onMouseClicked="" spacing="10" alignment="CENTER">
 
-                <ImageView fx:id="tarjeta_Minecraft" id="tarjeta" fitWidth="180" fitHeight="220"/>
+                <ImageView fx:id="img_Minecraft" fitWidth="180" fitHeight="220"/>
 
                 <Label text="Minecraft"/>
 
@@ -78,9 +79,9 @@
             </VBox>
 
             <!--tarjeta_LOL-->
-            <VBox spacing="10" alignment="CENTER">
+            <VBox fx:id="tarjeta_LOL" id="tarjeta" onMouseClicked="" spacing="10" alignment="CENTER">
 
-                <ImageView fx:id="tarjeta_LOL" id="tarjeta" fitWidth="180" fitHeight="220"/>
+                <ImageView fx:id="img_LOL" fitWidth="180" fitHeight="220"/>
 
                 <Label text="League of Legends"/>
 
@@ -91,9 +92,9 @@
             </VBox>
 
             <!--tarjeta_Elden-->
-            <VBox spacing="10" alignment="CENTER">
+            <VBox fx:id="tarjeta_Elden" id="tarjeta" onMouseClicked="" spacing="10" alignment="CENTER">
 
-                <ImageView fx:id="tarjeta_Elden" id="tarjeta" fitWidth="180" fitHeight="220"/>
+                <ImageView fx:id="img_Elden" fitWidth="180" fitHeight="220"/>
 
                 <Label text="Elden Ring"/>
 
@@ -104,9 +105,9 @@
             </VBox>
 
             <!--tarjeta_GodWar-->
-            <VBox spacing="10" alignment="CENTER">
+            <VBox fx:id="tarjeta_GodWar" id="tarjeta" onMouseClicked="" spacing="10" alignment="CENTER">
 
-                <ImageView fx:id="tarjeta_GodWar" id="tarjeta" fitWidth="180" fitHeight="220"/>
+                <ImageView fx:id="img_GodWar" fitWidth="180" fitHeight="220"/>
 
                 <Label text="God of War Ragnarok"/>
 
@@ -117,9 +118,9 @@
             </VBox>
 
             <!--tarjeta_HK-->
-            <VBox spacing="10" alignment="CENTER">
+            <VBox fx:id="tarjeta_HK" id="tarjeta_Sekiro" onMouseClicked="" spacing="10" alignment="CENTER">
 
-                <ImageView fx:id="tarjeta_HK" id="tarjeta_Sekiro" fitWidth="180" fitHeight="220"/>
+                <ImageView fx:id="img_HK" fitWidth="180" fitHeight="220"/>
 
                 <Label text="Hollow Knight"/>
 
@@ -130,9 +131,9 @@
             </VBox>
 
             <!--tarjeta_AL-->
-            <VBox spacing="10" alignment="CENTER">
+            <VBox fx:id="tarjeta_AL" id="tarjeta" onMouseClicked="" spacing="10" alignment="CENTER">
 
-                <ImageView fx:id="tarjeta_AL" id="tarjeta" fitWidth="180" fitHeight="220"/>
+                <ImageView fx:id="img_AL" fitWidth="180" fitHeight="220"/>
 
                 <Label text="Asphalt Legends"/>
 
