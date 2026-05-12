@@ -15,5 +15,5 @@
   - Un videojuego puede estar diseñado por 1 o varios diseñadores (1,N). Un diseñador puede diseñar 1 o varios videojuego (1,N)
   - Un videojuego puede ser publicado en 1 o varias plataformas distintas (1,N). En una plataforma se puede publicar 1 o varios videojuegos (1,N). --> (N:M)
  
-  # TABLA AISLADA (Uusuario):
+  # TABLA AISLADA (Usuario):
   - La tabla usuario está aislada porque dentro del diseño E-R no esta relacionada directamente, no participa en las relaciones principales de la tabla videojuegos. No hay una función que las conecte, la tabla usuarios se encarga de guardar los registros de usuarios guardando sus datos básicos de acceso. Si se quisiera relacionar la tabla de alguna manera se necesitarian futuras ampliaciones del proyecto, la tabla de usuario se podría relacionar con la tabla de videojuego mediante otra tabla intermedia.
