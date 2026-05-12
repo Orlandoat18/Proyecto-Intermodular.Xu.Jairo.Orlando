@@ -20,7 +20,6 @@
         <HBox alignment="CENTER" spacing="20">
 
             <Button text="Inicio"/>
-            <Button text="Juegos"/>
             <Button text="Sobre nosotros"/>
             <Button text="Inicia sesión"/>
 
@@ -53,7 +52,7 @@
         <FlowPane hgap="20" vgap="20" prefWrapLength="1000">
 
             <!--tarjeta_Sekiro-->
-            <VBox fx:id="tarjeta_Sekiro" id="tarjeta" onMouseClicked="" spacing="10" alignment="CENTER">
+            <VBox fx:id="tarjeta_Sekiro" id="tarjeta" onMouseClicked="#irInfo_Sekiro" spacing="10" alignment="CENTER">
 
                 <ImageView fx:id="img_Sekiro" fitWidth="180" fitHeight="220"/>
 
@@ -66,7 +65,7 @@
             </VBox>
 
             <!--tarjeta_Minecraft-->
-            <VBox fx:id="tarjeta_Minecraft" id="tarjeta" onMouseClicked="" spacing="10" alignment="CENTER">
+            <VBox fx:id="tarjeta_Minecraft" id="tarjeta" spacing="10" alignment="CENTER">
 
                 <ImageView fx:id="img_Minecraft" fitWidth="180" fitHeight="220"/>
 
@@ -78,34 +77,8 @@
 
             </VBox>
 
-            <!--tarjeta_LOL-->
-            <VBox fx:id="tarjeta_LOL" id="tarjeta" onMouseClicked="" spacing="10" alignment="CENTER">
-
-                <ImageView fx:id="img_LOL" fitWidth="180" fitHeight="220"/>
-
-                <Label text="League of Legends"/>
-
-                <Label text="2009"/>
-
-                <Label text="Multijugador"/>
-
-            </VBox>
-
-            <!--tarjeta_Elden-->
-            <VBox fx:id="tarjeta_Elden" id="tarjeta" onMouseClicked="" spacing="10" alignment="CENTER">
-
-                <ImageView fx:id="img_Elden" fitWidth="180" fitHeight="220"/>
-
-                <Label text="Elden Ring"/>
-
-                <Label text="2022"/>
-
-                <Label text="Rol de Acción y Soulslike"/>
-
-            </VBox>
-
             <!--tarjeta_GodWar-->
-            <VBox fx:id="tarjeta_GodWar" id="tarjeta" onMouseClicked="" spacing="10" alignment="CENTER">
+            <VBox fx:id="tarjeta_GodWar" id="tarjeta"  spacing="10" alignment="CENTER">
 
                 <ImageView fx:id="img_GodWar" fitWidth="180" fitHeight="220"/>
 
@@ -118,7 +91,7 @@
             </VBox>
 
             <!--tarjeta_HK-->
-            <VBox fx:id="tarjeta_HK" id="tarjeta_Sekiro" onMouseClicked="" spacing="10" alignment="CENTER">
+            <VBox fx:id="tarjeta_HK" id="tarjeta_Sekiro"  spacing="10" alignment="CENTER">
 
                 <ImageView fx:id="img_HK" fitWidth="180" fitHeight="220"/>
 
@@ -131,7 +104,7 @@
             </VBox>
 
             <!--tarjeta_AL-->
-            <VBox fx:id="tarjeta_AL" id="tarjeta" onMouseClicked="" spacing="10" alignment="CENTER">
+            <VBox fx:id="tarjeta_AL" id="tarjeta" spacing="10" alignment="CENTER">
 
                 <ImageView fx:id="img_AL" fitWidth="180" fitHeight="220"/>
 

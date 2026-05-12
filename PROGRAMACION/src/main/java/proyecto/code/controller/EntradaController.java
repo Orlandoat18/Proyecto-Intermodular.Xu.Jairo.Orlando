@@ -49,7 +49,7 @@ public class EntradaController {
             Stage stage = (Stage) btnEntrar.getScene().getWindow();
             stage.setScene(new Scene(root));
 
-            stage.setWidth(1000);
+            stage.setWidth(1050);
             stage.setHeight(700);
             stage.centerOnScreen();
             stage.show();
