@@ -74,7 +74,7 @@
                         </VBox>
 
                         <!--tarjeta_Minecraft-->
-                        <VBox fx:id="tarjeta_Minecraft" id="tarjeta" spacing="10" alignment="CENTER">
+                        <VBox fx:id="tarjeta_Minecraft" id="tarjeta" onMouseClicked="#irInfo_MC" spacing="10" alignment="CENTER">
 
                             <ImageView fx:id="img_Minecraft" fitWidth="180" fitHeight="220"/>
 
@@ -87,7 +87,7 @@
                         </VBox>
 
                         <!--tarjeta_GodWar-->
-                        <VBox fx:id="tarjeta_GodWar" id="tarjeta" spacing="10" alignment="CENTER">
+                        <VBox fx:id="tarjeta_GodWar" id="tarjeta" onMouseClicked="#irInfo_Godwar" spacing="10" alignment="CENTER">
 
                             <ImageView fx:id="img_GodWar" fitWidth="180" fitHeight="220"/>
 
@@ -100,7 +100,7 @@
                         </VBox>
 
                         <!--tarjeta_HK-->
-                        <VBox fx:id="tarjeta_HK" id="tarjeta_Sekiro" spacing="10" alignment="CENTER">
+                        <VBox fx:id="tarjeta_HK" id="tarjeta_Sekiro" onMouseClicked="#irInfo_HK" spacing="10" alignment="CENTER">
 
                             <ImageView fx:id="img_HK" fitWidth="180" fitHeight="220"/>
 
@@ -113,7 +113,7 @@
                         </VBox>
 
                         <!--tarjeta_AL-->
-                        <VBox fx:id="tarjeta_AL" id="tarjeta" spacing="10" alignment="CENTER">
+                        <VBox fx:id="tarjeta_AL" id="tarjeta" onMouseClicked="#irInfo_AL" spacing="10" alignment="CENTER">
 
                             <ImageView fx:id="img_AL" fitWidth="180" fitHeight="220"/>
 

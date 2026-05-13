@@ -40,6 +40,20 @@ public class InicioController {
     @FXML
     private VBox tarjeta_Sekiro;
 
+    @FXML
+    private VBox tarjeta_Minecraft;
+
+    @FXML
+    private VBox ttarjeta_GodWar;
+
+    @FXML
+    private VBox tarjeta_HK;
+
+    @FXML
+    private VBox tarjeta_AL;
+
+
+
     private final InicioService inicioService = new InicioService();
 
     @FXML
@@ -71,6 +85,82 @@ public class InicioController {
     public void irInfo_Sekiro() {
         try {
             Parent root = FXMLLoader.load(getClass().getResource("/views/info_Sekiro.fxml"));
+
+            Stage stage = (Stage) tarjeta_Sekiro.getScene().getWindow();
+            stage.setScene(new Scene(root));
+
+            stage.setWidth(1000);
+            stage.setHeight(700);
+            stage.centerOnScreen();
+            stage.show();
+
+        } catch (IOException e) {
+            System.out.println("Error al entrar a infomacion de Sekiro");
+            e.printStackTrace();
+        }
+    }
+
+    @FXML
+    public void irInfo_MC() {
+        try {
+            Parent root = FXMLLoader.load(getClass().getResource("/views/info_MC.fxml"));
+
+            Stage stage = (Stage) tarjeta_Sekiro.getScene().getWindow();
+            stage.setScene(new Scene(root));
+
+            stage.setWidth(1000);
+            stage.setHeight(700);
+            stage.centerOnScreen();
+            stage.show();
+
+        } catch (IOException e) {
+            System.out.println("Error al entrar a infomacion de Sekiro");
+            e.printStackTrace();
+        }
+    }
+
+    @FXML
+    public void irInfo_Godwar() {
+        try {
+            Parent root = FXMLLoader.load(getClass().getResource("/views/info_GodWar.fxml"));
+
+            Stage stage = (Stage) tarjeta_Sekiro.getScene().getWindow();
+            stage.setScene(new Scene(root));
+
+            stage.setWidth(1000);
+            stage.setHeight(700);
+            stage.centerOnScreen();
+            stage.show();
+
+        } catch (IOException e) {
+            System.out.println("Error al entrar a infomacion de Sekiro");
+            e.printStackTrace();
+        }
+    }
+
+    @FXML
+    public void irInfo_HK() {
+        try {
+            Parent root = FXMLLoader.load(getClass().getResource("/views/info_HK.fxml"));
+
+            Stage stage = (Stage) tarjeta_Sekiro.getScene().getWindow();
+            stage.setScene(new Scene(root));
+
+            stage.setWidth(1000);
+            stage.setHeight(700);
+            stage.centerOnScreen();
+            stage.show();
+
+        } catch (IOException e) {
+            System.out.println("Error al entrar a infomacion de Sekiro");
+            e.printStackTrace();
+        }
+    }
+
+    @FXML
+    public void irInfo_AL() {
+        try {
+            Parent root = FXMLLoader.load(getClass().getResource("/views/info_AL.fxml"));
 
             Stage stage = (Stage) tarjeta_Sekiro.getScene().getWindow();
             stage.setScene(new Scene(root));
