@@ -8,7 +8,7 @@
 <?import javafx.geometry.Insets?>
 <BorderPane xmlns="http://javafx.com/javafx"
             xmlns:fx="http://javafx.com/fxml"
-            fx:controller="proyecto.code.controller.Info_SekiroController"
+            fx:controller="proyecto.code.controller.Info_Sekiro_Controller"
             prefHeight="400.0" prefWidth="600.0">
     <top>
         <!--header-->
@@ -105,7 +105,7 @@
 
                             <Label text="Sekiro"/>
 
-                            <ImageView fitWidth="180" fitHeight="220"/>
+                            <ImageView fx:id="sekiro_personaje" fitWidth="180" fitHeight="220"/>
 
                             <VBox alignment="TOP_LEFT">
 
@@ -117,26 +117,11 @@
 
                         </HBox>
 
-                        <!--kuro-->
-                        <HBox spacing="20" alignment="TOP_LEFT">
-                            <Label text="Kuro"/>
-
-                            <ImageView fitWidth="180" fitHeight="220"/>
-
-                            <VBox alignment="TOP_LEFT">
-
-                                <Text wrappingWidth="300"
-                                      text="Kuro es parte integral de la trama del juego y de los eventos que se desarrollan durante el mismo. Es el único descendiente de un antiguo linaje misterioso y, al igual que los shinobi, está sólo en el mundo. Fue adoptado y criado por la familia Hirata. Al contrario que los niños de su edad, es tranquilo, tiene un corazón fuerte, y da una impresión natural de dignidad. Debido a su linaje es capturado por el Comandante del Clan Ashina, fallando el Lobo en su protección."/>
-
-                            </VBox>
-
-                        </HBox>
-
                         <!--Isshin-->
                         <HBox spacing="20" alignment="TOP_LEFT">
                             <Text text="Isshin Ashina"/>
 
-                            <ImageView fitWidth="180" fitHeight="220"/>
+                            <ImageView fx:id="isshin_personaje" fitWidth="180" fitHeight="220"/>
 
                             <VBox alignment="TOP_LEFT">
 
@@ -150,7 +135,7 @@
                         <HBox spacing="20" alignment="TOP_LEFT">
                             <Text text="Genichiro Ashina"/>
 
-                            <ImageView fitWidth="180" fitHeight="220"/>
+                            <ImageView fx:id="genichiro_personaje" fitWidth="180" fitHeight="220"/>
 
                             <VBox alignment="TOP_LEFT">
 

@@ -6,7 +6,7 @@ import proyecto.code.exceptions.cargaException;
 
 import java.net.URL;
 
-public class Info_SekiroService {
+public class Info_Sekiro_Service {
 
     public void cargarImagen(ImageView imageView, String ruta) throws cargaException {
 
