@@ -8,15 +8,14 @@
 
 <?import javafx.scene.image.ImageView?>
 
-<ScrollPane xmlns="http://javafx.com/javafx"
+<BorderPane xmlns="http://javafx.com/javafx"
             xmlns:fx="http://javafx.com/fxml"
             stylesheets="/styles/inicio.css"
             fx:controller="proyecto.code.controller.InicioController"
             prefHeight="400.0" prefWidth="600.0">
+    <!--header-->
+    <top>
 
-    <VBox spacing="20">
-
-        <!--header-->
         <HBox alignment="CENTER" spacing="20">
 
             <Button text="Inicio"/>
@@ -31,93 +30,109 @@
 
         </HBox>
 
-        <!--main-->
-        <VBox alignment="CENTER" spacing="15">
+    </top>
+    <!--main-->
+    <center>
 
-            <ImageView fx:id="image_dibujo" id="image_dibujo" fitHeight="250" fitWidth="400"/>
+        <ScrollPane fitToWidth="true">
 
-            <Label text="BIENVENIDO A"/>
+            <content>
 
-            <ImageView fx:id="logoMain" id="logoMain" fitHeight="120" fitWidth="120"/>
+                <VBox spacing="20">
 
-            <Label wrapText="true" maxWidth="600"
-                   text="La enciclopedia colaborativa dedicada a los videojuegos clásicos. Descubre, aprende y comparte la historia del videojuego retro"/>
+                    <VBox alignment="CENTER" spacing="15">
 
-        </VBox>
+                        <ImageView fx:id="image_dibujo" id="image_dibujo" fitHeight="250" fitWidth="400"/>
 
-        <!--titulo-->
-        <Label text="EXPLORAR JUEGOS CLÁSICOS"/>
+                        <Label text="BIENVENIDO A"/>
 
-        <!--tarjetas-->
-        <FlowPane hgap="20" vgap="20" prefWrapLength="1000">
+                        <ImageView fx:id="logoMain" id="logoMain" fitHeight="120" fitWidth="120"/>
 
-            <!--tarjeta_Sekiro-->
-            <VBox fx:id="tarjeta_Sekiro" id="tarjeta" onMouseClicked="#irInfo_Sekiro" spacing="10" alignment="CENTER">
+                        <Label wrapText="true" maxWidth="600"
+                               text="La enciclopedia colaborativa dedicada a los videojuegos clásicos. Descubre, aprende y comparte la historia del videojuego retro"/>
 
-                <ImageView fx:id="img_Sekiro" fitWidth="180" fitHeight="220"/>
+                    </VBox>
 
-                <Label text="Sekiro: Shadows Die Twice"/>
+                    <!--titulo-->
+                    <Label text="EXPLORAR JUEGOS CLÁSICOS"/>
 
-                <Label text="2019"/>
+                    <!--tarjetas-->
+                    <FlowPane hgap="20" vgap="20" prefWrapLength="1000">
 
-                <Label text="Acción y Aventura"/>
+                        <!--tarjeta_Sekiro-->
+                        <VBox fx:id="tarjeta_Sekiro" id="tarjeta" onMouseClicked="#irInfo_Sekiro" spacing="10"
+                              alignment="CENTER">
 
-            </VBox>
+                            <ImageView fx:id="img_Sekiro" fitWidth="180" fitHeight="220"/>
 
-            <!--tarjeta_Minecraft-->
-            <VBox fx:id="tarjeta_Minecraft" id="tarjeta" spacing="10" alignment="CENTER">
+                            <Label text="Sekiro: Shadows Die Twice"/>
 
-                <ImageView fx:id="img_Minecraft" fitWidth="180" fitHeight="220"/>
+                            <Label text="2019"/>
 
-                <Label text="Minecraft"/>
+                            <Label text="Acción y Aventura"/>
 
-                <Label text="2011"/>
+                        </VBox>
 
-                <Label text="Mundo abierto y supervivencia"/>
+                        <!--tarjeta_Minecraft-->
+                        <VBox fx:id="tarjeta_Minecraft" id="tarjeta" spacing="10" alignment="CENTER">
 
-            </VBox>
+                            <ImageView fx:id="img_Minecraft" fitWidth="180" fitHeight="220"/>
 
-            <!--tarjeta_GodWar-->
-            <VBox fx:id="tarjeta_GodWar" id="tarjeta"  spacing="10" alignment="CENTER">
+                            <Label text="Minecraft"/>
 
-                <ImageView fx:id="img_GodWar" fitWidth="180" fitHeight="220"/>
+                            <Label text="2011"/>
 
-                <Label text="God of War Ragnarok"/>
+                            <Label text="Mundo abierto y supervivencia"/>
 
-                <Label text="2022"/>
+                        </VBox>
 
-                <Label text="Acción y Aventura"/>
+                        <!--tarjeta_GodWar-->
+                        <VBox fx:id="tarjeta_GodWar" id="tarjeta" spacing="10" alignment="CENTER">
 
-            </VBox>
+                            <ImageView fx:id="img_GodWar" fitWidth="180" fitHeight="220"/>
 
-            <!--tarjeta_HK-->
-            <VBox fx:id="tarjeta_HK" id="tarjeta_Sekiro"  spacing="10" alignment="CENTER">
+                            <Label text="God of War Ragnarok"/>
 
-                <ImageView fx:id="img_HK" fitWidth="180" fitHeight="220"/>
+                            <Label text="2022"/>
 
-                <Label text="Hollow Knight"/>
+                            <Label text="Acción y Aventura"/>
 
-                <Label text="2017"/>
+                        </VBox>
 
-                <Label text="Acción y Aventura"/>
+                        <!--tarjeta_HK-->
+                        <VBox fx:id="tarjeta_HK" id="tarjeta_Sekiro" spacing="10" alignment="CENTER">
 
-            </VBox>
+                            <ImageView fx:id="img_HK" fitWidth="180" fitHeight="220"/>
 
-            <!--tarjeta_AL-->
-            <VBox fx:id="tarjeta_AL" id="tarjeta" spacing="10" alignment="CENTER">
+                            <Label text="Hollow Knight"/>
 
-                <ImageView fx:id="img_AL" fitWidth="180" fitHeight="220"/>
+                            <Label text="2017"/>
 
-                <Label text="Asphalt Legends"/>
+                            <Label text="Acción y Aventura"/>
 
-                <Label text="2018"/>
+                        </VBox>
 
-                <Label text="Carreras"/>
+                        <!--tarjeta_AL-->
+                        <VBox fx:id="tarjeta_AL" id="tarjeta" spacing="10" alignment="CENTER">
 
-            </VBox>
-        </FlowPane>
+                            <ImageView fx:id="img_AL" fitWidth="180" fitHeight="220"/>
 
-    </VBox>
+                            <Label text="Asphalt Legends"/>
 
-</ScrollPane>
+                            <Label text="2018"/>
+
+                            <Label text="Carreras"/>
+
+                        </VBox>
+
+                    </FlowPane>
+
+                </VBox>
+
+            </content>
+
+        </ScrollPane>
+
+    </center>
+</BorderPane>
 
