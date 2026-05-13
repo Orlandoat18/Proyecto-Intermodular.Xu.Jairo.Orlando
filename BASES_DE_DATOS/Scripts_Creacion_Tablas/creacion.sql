@@ -16,7 +16,6 @@ create table Desarrollador(
     Pais_Desarrollador varchar(100) not null,
     Ciudad_Desarrollador varchar(100) not null,
     Fecha_fundacion_Des date not null,
-    Sitio_web_Des varchar(255),
     Descripcion_Des text not null,
     primary key (Id_Desarrollador)
 );
@@ -27,7 +26,6 @@ create table Distribuidor(
     Pais_Distribuidor varchar(100) not null,
     Ciudad_Distribuidor varchar(100) not null,
     Fecha_fundacion_Dis date not null,
-    Sitio_web_Dis varchar(255),
     Descripcion_Dis text not null,
     primary key (Id_Distribuidor)
 );
@@ -76,7 +74,6 @@ create table Videojuego(
     Titulo varchar(150) not null,
     Descripcion_Videojuego text not null,
     Clasificacion_edad varchar(10) not null,
-    Imagen_portada varchar(255) not null,
     primary key (Id_Videojuego),
     foreign key (Id_Desarrollador) references Desarrollador(Id_Desarrollador)
 );
