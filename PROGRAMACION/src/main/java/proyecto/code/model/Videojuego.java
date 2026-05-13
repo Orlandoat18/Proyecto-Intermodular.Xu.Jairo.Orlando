@@ -6,15 +6,13 @@ public class Videojuego {
     private String titulo;
     private String descripcion_Videojuego;
     private String clasificacion_edad;
-    private String imagen_portada;
-    
+
     //Constructor
-    public Videojuego(String id_Videojuego, String titulo, String descripcion_Videojuego, String clasificacion_edad, String imagen_portada) {
+    public Videojuego(String id_Videojuego, String titulo, String descripcion_Videojuego, String clasificacion_edad) {
         this.id_Videojuego = id_Videojuego;
         this.titulo = titulo;
         this.descripcion_Videojuego = descripcion_Videojuego;
         this.clasificacion_edad = clasificacion_edad;
-        this.imagen_portada = imagen_portada;
     }
 
     //Getters y setters
@@ -50,11 +48,4 @@ public class Videojuego {
         this.clasificacion_edad = clasificacion_edad;
     }
 
-    public String getImagen_portada() {
-        return imagen_portada;
-    }
-
-    public void setImagen_portada(String imagen_portada) {
-        this.imagen_portada = imagen_portada;
-    }
 }
