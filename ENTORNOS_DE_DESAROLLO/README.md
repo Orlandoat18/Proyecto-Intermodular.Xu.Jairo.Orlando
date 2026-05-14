@@ -6,12 +6,15 @@
 · Xu
 
 # ¿Qué es el proyecto?
-· El proyecto está enfocado en una página web la cual gestiona un catálogo de videojuegos. Incluye un acceso de usuario y un acceso a un catálogo predefinido de videojuegos, del usuario solo se guardará la información de registro y de los videojuegos sus datos de ficha (Información detallada del videojuego).
+· Arcadepedia es un proyecto desarrollado por estudiantes de Desarrollo de Apliaciones Web (DAW) con el objetivo de crear una enciclopedia colaborativa centrada en los videojuegos clásicos y retro.
+La idea nace de nuestra pasión por el mundo del gaming y del interés por preservar la historia de títulos, consolas y desarrolladores que marcaron generaciones.
 
 # ¿Qué problema resuelve?
-· Este proyecto está enfocado especialmente a un público que está incluido en la sección de videojuegos o relacionados con este campo, resumidamente a gente que tenga interés en la cultura de los videojuegos.
+· A través de una plataforma visual e interactiva, buscamos ofrecer un espacio donde los usuarios puedan descubrir información, curiosidades y datos sobre videojuegos icónicos de diferentes épocas.
 
 # Tecnologías usadas:
+· El proyecto combina diseño web, programación y bases de datos para construir una experiencia moderna inspirada en la estética retro arcade. Además, Arcadepedia representa la aplicación práctica de conocimientos adquiridos durante el desarrollo del ciclo formativo, integrando tecnologías como Java, JavaFX, FXML, CSS y MySQL.
+
 · Módulo Bases de datos -> Creación del diagrama E-R (draw.io) / Modelo relacional (Bloc de notas) / Scripts (MySQL Workbench)
 
 · Módulo de Entornos de Desarollo -> Organización de carpetas, recursos y documentación del proyecto (Git, GitHub)
