@@ -5,4 +5,6 @@
 · 
 
 # ¿Qué parte corresponde al MPO?
-· 
+· En el módulo de programación en el código, el diseño de objetos está implementado, las clases con sus constructores, atributos únicamente necesarios, encapsulados y con los métodos correspondientes.  
+
+· Estructuración de paquetes con sentido, separación de responsabilidades.
