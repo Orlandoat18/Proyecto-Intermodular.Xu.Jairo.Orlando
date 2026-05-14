@@ -4,7 +4,7 @@
 # ¿Qué paginas incluye?
 · Página principal (inicio.html) -> Menú principal para navegar a otras páginas, una introducción, un apartado para explorar contenido y similares.
 
-. Página de contacto (contacto.html) ->  
+. Página de sobre nosotros (sobre_nosotros.html) -> En esta página se muestra la información relacionada con los creadores de la página y el por qué del proyecto. 
 
 . Página de presentación (index.html) -> Primera página que se muestra al acceder a la web, con formato de presentación.
 
