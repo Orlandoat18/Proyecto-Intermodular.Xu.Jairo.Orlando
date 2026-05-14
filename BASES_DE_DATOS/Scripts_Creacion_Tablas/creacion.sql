@@ -69,59 +69,68 @@ create table ModoDeJuego(
     primary key (Id_ModoJuego)
 );
 
+create table Personaje(
+    Id_Personaje int not null auto_increment,
+    Nombre_Personaje varchar(150) not null,
+    Descripcion_Personaje text not null,
+    primary key (Id_Personaje)
+);
+
 create table Videojuego(
     Id_Videojuego int not null auto_increment,
     Titulo varchar(150) not null,
     Descripcion_Videojuego text not null,
     Clasificacion_edad varchar(10) not null,
     Id_Desarrollador int not null,
+    Id_Personaje int not null,
     primary key (Id_Videojuego),
-    foreign key (Id_Desarrollador) references Desarrollador(Id_Desarrollador)
+    foreign key (Id_Desarrollador) references Desarrollador(Id_Desarrollador),
+    foreign key (Id_Personaje) references Personaje(Id_Personaje)
 );
 
 create table Videojuego_Distribuidor(
-    Id_Videojuego int not null auto_increment,
-    Id_Distribuidor int not null auto_increment,
+    Id_Videojuego int not null,
+    Id_Distribuidor int not null,
     primary key (Id_Videojuego,Id_Distribuidor),
     foreign key (Id_Videojuego) references Videojuego(Id_Videojuego),
     foreign key (Id_Distribuidor) references Distribuidor(Id_Distribuidor)
 );
 
 create table Videojuego_Diseñador(
-    Id_Videojuego int not null auto_increment,
-    Id_Diseñador int not null auto_increment,
+    Id_Videojuego int not null,
+    Id_Diseñador int not null,
     primary key (Id_Videojuego,Id_Diseñador),
     foreign key (Id_Videojuego) references Videojuego(Id_Videojuego),
     foreign key (Id_Diseñador) references Diseñador(Id_Diseñador)
 );
 
 create table Videojuego_Plataforma(
-    Id_Videojuego int not null auto_increment,
-    Id_Plataforma int not null auto_increment,
+    Id_Videojuego int not null,
+    Id_Plataforma int not null,
     primary key (Id_Videojuego,Id_Plataforma),
     foreign key (Id_Videojuego) references Videojuego(Id_Videojuego),
     foreign key (Id_Plataforma) references Plataforma(Id_Plataforma)
 );
 
 create table Videojuego_Premio(
-    Id_Videojuego int not null auto_increment,
-    Id_Premio int not null auto_increment,
+    Id_Videojuego int not null,
+    Id_Premio int not null,
     primary key (Id_Videojuego,Id_Premio),
     foreign key (Id_Videojuego) references Videojuego(Id_Videojuego),
     foreign key (Id_Premio) references Premio(Id_Premio)
 );
 
 create table Videojuego_Genero(
-    Id_Videojuego int not null auto_increment,
-    Id_Genero int not null auto_increment,
+    Id_Videojuego int not null,
+    Id_Genero int not null,
     primary key (Id_Videojuego,Id_Genero),
     foreign key (Id_Videojuego) references Videojuego(Id_Videojuego),
     foreign key (Id_Genero) references Genero(Id_Genero)
   );
 
 create table Videojuego_ModoDeJuego(
-    Id_Videojuego int not null auto_increment,
-    Id_ModoJuego int not null auto_increment,
+    Id_Videojuego int not null,
+    Id_ModoJuego int not null,
     primary key (Id_Videojuego,Id_ModoJuego),
     foreign key (Id_Videojuego) references Videojuego(Id_Videojuego),
     foreign key (Id_ModoJuego) references ModoDeJuego(Id_ModoJuego)
