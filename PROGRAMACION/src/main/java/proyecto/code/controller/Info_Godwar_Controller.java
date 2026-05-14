@@ -8,11 +8,11 @@ import javafx.scene.control.Button;
 import javafx.scene.image.ImageView;
 import javafx.stage.Stage;
 import proyecto.code.exceptions.cargaException;
-import proyecto.code.service.Info_SekiroService;
+import proyecto.code.service.Info_Godwar_Service;
 
 import java.io.IOException;
 
-public class Info_SekiroController {
+public class Info_Godwar_Controller {
 
     @FXML
     private ImageView logoHeader;
@@ -20,12 +20,12 @@ public class Info_SekiroController {
     @FXML
     private Button btnInicio;
 
-    private final Info_SekiroService info_sekiroService = new Info_SekiroService();
+    private final Info_Godwar_Service info_Godwar_Service = new Info_Godwar_Service();
 
     @FXML
     private void initialize() {
         try {
-            info_sekiroService.cargarImagen(logoHeader, "/img/PAGINA_LOGO.jpg");
+            info_Godwar_Service.cargarImagen(logoHeader, "/img/PAGINA_LOGO.jpg");
 
         }catch (cargaException e){
             System.out.println("Error general en carga de recursos");
@@ -51,5 +51,4 @@ public class Info_SekiroController {
             e.printStackTrace();
         }
     }
-
 }
