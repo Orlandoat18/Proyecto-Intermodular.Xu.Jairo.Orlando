@@ -67,9 +67,9 @@ public class Info_Sekiro_Controller {
             info_Sekiro_Service.cargarImagen(sekiroImage, "/img/Sekiro.jpg");
 
             info_Sekiro_Service.cargarImagen(sekiro_personaje, "/img/sekiro_personaje/Sekiro_personaje.jpg");
-
+            
             cargarDatos();
-
+            
         } catch (cargaException e) {
             System.out.println("Error general en carga de recursos");
             System.out.println(e.getMessage());
@@ -80,23 +80,23 @@ public class Info_Sekiro_Controller {
 
         try {
 
-            Videojuego sekiro = Info_Sekiro_Service.getVideojuego("Sekiro: Shadows Die Twice");
+            Videojuego videojuego = Info_Sekiro_Service.getVideojuego("Sekiro: Shadows Die Twice");
 
-            if (sekiro == null) return;
+            if (videojuego == null) return;
 
-            descripcionSekiro.setText(sekiro.getDescripcion_Videojuego());
+            descripcionSekiro.setText(videojuego.getDescripcion_Videojuego());
 
-            desarrolladorSekiro.setText(Info_Sekiro_Service.getDesarrollador(sekiro.getId_Desarrollador()));
+            desarrolladorSekiro.setText(Info_Sekiro_Service.getDesarrollador(videojuego.getId_Desarrollador()));
 
-            distribuidorSekiro.setText(Info_Sekiro_Service.getDistribuidores(sekiro.getId_Videojuego()));
+            distribuidorSekiro.setText(Info_Sekiro_Service.getDistribuidores(videojuego.getId_Videojuego()));
 
-            diseniadorSekiro.setText(Info_Sekiro_Service.getDiseniadores(sekiro.getId_Videojuego()));
+            diseniadorSekiro.setText(Info_Sekiro_Service.getDiseniadores(videojuego.getId_Videojuego()));
 
-            plataformaSekiro.setText(Info_Sekiro_Service.getPlataformas(sekiro.getId_Videojuego()));
+            plataformaSekiro.setText(Info_Sekiro_Service.getPlataformas(videojuego.getId_Videojuego()));
 
-            generoSekiro.setText(Info_Sekiro_Service.getGeneros(sekiro.getId_Videojuego()));
+            generoSekiro.setText(Info_Sekiro_Service.getGeneros(videojuego.getId_Videojuego()));
 
-            modoSekiro.setText(Info_Sekiro_Service.getModos(sekiro.getId_Videojuego()));
+            modoSekiro.setText(Info_Sekiro_Service.getModos(videojuego.getId_Videojuego()));
 
             descripcionP1.setText("Personaje principal del videojuego Sekiro.");
 

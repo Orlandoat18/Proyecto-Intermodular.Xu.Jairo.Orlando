@@ -14,11 +14,7 @@ import java.sql.SQLException;
 
 public class Info_Sekiro_Service {
 
-    private static VideojuegoDAOImpl dao;
-
-    public Info_Sekiro_Service() {
-        this.dao = new VideojuegoDAOImpl();
-    }
+    private static final VideojuegoDAOImpl dao = new VideojuegoDAOImpl();
 
     public void cargarImagen(ImageView imageView, String ruta) throws cargaException {
 
