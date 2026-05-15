@@ -5,7 +5,7 @@ import java.sql.DriverManager;
 import java.sql.SQLException;
 
 public class DatabaseConfig {
-    private static final String url = "jdbc:mysql://localhost:3306/bdcentroidiomas";
+    private static final String url = "jdbc:mysql://localhost:3306/Arcadepedia";
     private static final String user = "root";
     private static final String pwd = "mysql";
 
