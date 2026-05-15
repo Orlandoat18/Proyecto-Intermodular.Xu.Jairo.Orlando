@@ -10,13 +10,11 @@ import javafx.scene.image.ImageView;
 import javafx.scene.text.Text;
 import javafx.stage.Stage;
 
-import proyecto.code.config.DatabaseConfig;
 import proyecto.code.exceptions.cargaException;
 import proyecto.code.model.Videojuego;
 import proyecto.code.service.Info_Sekiro_Service;
 
 import java.io.IOException;
-import java.sql.Connection;
 import java.sql.SQLException;
 
 public class Info_Sekiro_Controller {
@@ -66,7 +64,7 @@ public class Info_Sekiro_Controller {
 
             info_Sekiro_Service.cargarImagen(sekiroImage, "/img/Sekiro.jpg");
 
-            info_Sekiro_Service.cargarImagen(sekiro_personaje, "/img/sekiro_personaje/Sekiro_personaje.jpg");
+            info_Sekiro_Service.cargarImagen(sekiro_personaje, "/img/personaje/Sekiro_personaje.jpg");
             
             cargarDatos();
             
