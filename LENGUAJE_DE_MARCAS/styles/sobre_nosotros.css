@@ -91,12 +91,12 @@ header p{
 }
 
 /*imagen*/
-.img-equipo{
-    width:1020px;
+.img-sobrenosotros{
+    width:800px;
     height:auto;
     border-radius:18px;
-    border:1px solid rgba(157,255,0,0.30);
-    box-shadow:0 0 25px rgba(157,255,0,0.15);
+    border:8px solid rgba(31, 243, 3, 0.967);
+    box-shadow:0 0 25px rgba(31, 206, 11, 0.738);
     margin-bottom:45px;
 }
 
