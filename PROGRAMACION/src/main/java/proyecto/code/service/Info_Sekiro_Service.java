@@ -50,6 +50,12 @@ public class Info_Sekiro_Service {
         return dao.getDistribuidor(connection,idVideojuego);
     }
 
+    public static String getDiseniadores(int idVideojuego) throws SQLException {
+        Connection connection = DatabaseConfig.getConnection();
+
+        return dao.getDiseniador(connection,idVideojuego);
+    }
+
     public static String getPlataformas(int idVideojuego) throws SQLException {
         Connection connection = DatabaseConfig.getConnection();
 

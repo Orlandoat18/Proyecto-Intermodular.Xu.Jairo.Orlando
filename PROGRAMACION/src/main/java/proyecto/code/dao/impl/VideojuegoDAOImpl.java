@@ -86,6 +86,24 @@ public class VideojuegoDAOImpl{
         return null;
     }
 
+    public String getDiseniador(Connection DatabaseConfig, int idVideojuego) {
+        String consulta ="SELECT Nombre_Diseñador FROM Diseñador d INNER JOIN Videojuego_Diseñador vd ON d.Id_Distribuidor = vd.Id_Distribuidor WHERE vd.Id_Videojuego = ?";
+
+        try (PreparedStatement stmt = DatabaseConfig.prepareStatement(consulta)){
+
+            stmt.setInt(1,idVideojuego);
+            ResultSet rs = stmt.executeQuery();
+
+            if(rs.next()){
+                return rs.getString(1);
+            }
+
+        }catch (SQLException e){
+            e.printStackTrace();
+        }
+        return null;
+    }
+
     public String getPlataforma(Connection DatabaseConfig, int idVideojuego) {
         String consulta ="SELECT Nombre_Plataforma FROM Plataforma p INNER JOIN Videojuego_Plataforma vp ON p.Id_Plataforma = vp.Id_Plataforma WHERE vp.Id_Videojuego = ?";
 
