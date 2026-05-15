@@ -56,7 +56,7 @@
                             <ColumnConstraints percentWidth="70"/>
                         </columnConstraints>
 
-                        <Label fx:id="tituloSekiro2"
+                        <Label text="Sekiro: Shadows Die Twice"
                                GridPane.columnSpan="2"
                                GridPane.rowIndex="0"/>
 
@@ -75,7 +75,9 @@
                                GridPane.rowIndex="3" GridPane.columnIndex="1"/>
 
                         <Label text="Diseñador" GridPane.rowIndex="4" GridPane.columnIndex="0"/>
-                        <Label fx:id="diseniadorSekiro" GridPane.rowIndex="4" GridPane.columnIndex="1"/>
+                        <Label fx:id="diseniadorSekiro"
+                               wrapText="true"
+                               GridPane.rowIndex="4" GridPane.columnIndex="1"/>
 
                         <Label text="Plataformas" GridPane.rowIndex="5" GridPane.columnIndex="0"/>
                         <Label fx:id="plataformaSekiro"

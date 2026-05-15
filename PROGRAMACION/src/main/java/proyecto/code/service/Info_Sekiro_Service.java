@@ -16,7 +16,7 @@ public class Info_Sekiro_Service {
 
     private static VideojuegoDAOImpl dao;
 
-    public Info_Sekiro_Service(Connection DatabaseConfig) {
+    public Info_Sekiro_Service() {
         this.dao = new VideojuegoDAOImpl();
     }
 
@@ -48,6 +48,12 @@ public class Info_Sekiro_Service {
         Connection connection = DatabaseConfig.getConnection();
 
         return dao.getDistribuidor(connection,idVideojuego);
+    }
+
+    public static String getDiseniadores(int idVideojuego) throws SQLException {
+        Connection connection = DatabaseConfig.getConnection();
+
+        return dao.getDiseniador(connection,idVideojuego);
     }
 
     public static String getPlataformas(int idVideojuego) throws SQLException {

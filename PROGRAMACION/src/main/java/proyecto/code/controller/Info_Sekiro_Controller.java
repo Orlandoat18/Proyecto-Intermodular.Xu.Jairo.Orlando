@@ -29,10 +29,6 @@ public class Info_Sekiro_Controller {
 
 //Introduccion
     @FXML
-    private Label tituloSekiro1;
-    @FXML
-    private Label tituloSekiro2;
-    @FXML
     private Text descripcionSekiro;
 
 //Table
@@ -63,12 +59,16 @@ public class Info_Sekiro_Controller {
 
     @FXML
     private void initialize() {
+        info_Sekiro_Service = new Info_Sekiro_Service();
+
         try {
             info_Sekiro_Service.cargarImagen(logoHeader, "/img/PAGINA_LOGO.jpg");
 
             info_Sekiro_Service.cargarImagen(sekiroImage, "/img/Sekiro.jpg");
 
             info_Sekiro_Service.cargarImagen(sekiro_personaje, "/img/sekiro_personaje/Sekiro_personaje.jpg");
+
+            cargarDatos();
 
         } catch (cargaException e) {
             System.out.println("Error general en carga de recursos");
@@ -89,6 +89,8 @@ public class Info_Sekiro_Controller {
             desarrolladorSekiro.setText(Info_Sekiro_Service.getDesarrollador(sekiro.getId_Desarrollador()));
 
             distribuidorSekiro.setText(Info_Sekiro_Service.getDistribuidores(sekiro.getId_Videojuego()));
+
+            diseniadorSekiro.setText(Info_Sekiro_Service.getDiseniadores(sekiro.getId_Videojuego()));
 
             plataformaSekiro.setText(Info_Sekiro_Service.getPlataformas(sekiro.getId_Videojuego()));
 

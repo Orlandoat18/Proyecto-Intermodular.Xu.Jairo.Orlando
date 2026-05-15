@@ -6,6 +6,7 @@
 <?import javafx.scene.image.ImageView?>
 <?import javafx.geometry.Insets?>
 <?import javafx.scene.text.Text?>
+
 <BorderPane xmlns="http://javafx.com/javafx"
             xmlns:fx="http://javafx.com/fxml"
             stylesheets="/styles/info.css"
@@ -14,7 +15,7 @@
 
     <top>
         <!--header-->
-        <HBox alignment="CENTER_LEFT" spacing="20" >
+        <HBox alignment="CENTER_LEFT" spacing="20">
 
             <ImageView fx:id="logoHeader" id="logoHeader" fitWidth="170" preserveRatio="true"/>
 
@@ -41,10 +42,16 @@
 
                     <!--introduccion-->
                     <VBox alignment="CENTER_LEFT">
+
                         <Label text="Asphalt Legends"/>
 
                         <Text wrappingWidth="300" text="Asphalt Legends (antes conocido como Asphalt 9: Legends y luego como Asphalt Legends Unite) es un videojuego de carreras desarrollado y publicado por Gameloft como parte de la serie Asphalt.
                         &#10;&#10;A comparación de entregas pasadas, las mecánicas del juego se acercan más a un simulador de carreras, como por ejemplo Forza Horizon 4 o Real Racing 3, en los cuales al tomar una curva el auto desacelera para evitar salirse de la pista o volcar, si se sale de la carretera marcada se perderá velocidad como por ejemplo ir por la acera, pasto, arena o nieve. Para solucionar esto Asphalt 9 cuenta con el nitro."/>
+
+                        <Label text="Asphalt Legends Unite"/>
+
+                        <Text fx:id="descripcionAL" wrappingWidth="300"/>
+
 
                     </VBox>
 
@@ -56,8 +63,12 @@
                             <ColumnConstraints percentWidth="70"/>
                         </columnConstraints>
 
+
                         <Label text="Asphalt Legends"
-                               styleClass="title_table"
+                               styleClass="title_table"/>
+
+                        <Label fx:id="tituloAL2"
+
                                GridPane.columnSpan="2"
                                GridPane.rowIndex="0"/>
 
@@ -68,28 +79,50 @@
                                    fx:id="sekiroImage"/>
 
                         <Label text="Desarrollador" GridPane.rowIndex="2" GridPane.columnIndex="0"/>
+
                         <Label text="Gameloft Barcelona" GridPane.rowIndex="2" GridPane.columnIndex="1"/>
 
                         <Label text="Distribuidor" GridPane.rowIndex="3" GridPane.columnIndex="0"/>
-                        <Label text="Gameloft"
+                        <Label text="Gameloft"/>
+
+                        <Label fx:id="desarrolladorAL" GridPane.rowIndex="2" GridPane.columnIndex="1"/>
+
+                        <Label text="Distribuidor" GridPane.rowIndex="3" GridPane.columnIndex="0"/>
+                        <Label fx:id="distribuidorAL"
+
                                wrapText="true"
                                GridPane.rowIndex="3" GridPane.columnIndex="1"/>
 
                         <Label text="Diseñador" GridPane.rowIndex="4" GridPane.columnIndex="0"/>
+
                         <Label text="Vincent Labelle, Martin Courcy Y Nicolas Dubé" GridPane.rowIndex="4" GridPane.columnIndex="1"/>
 
                         <Label text="Plataformas" GridPane.rowIndex="5" GridPane.columnIndex="0"/>
-                        <Label text="iOS, Android, Windows, Nintendo Switch, Fire OS, macOS, Xbox One, Xbox Series X/S, Arcade, Playstation 4 y Playstation 5"
+                        <Label text="iOS, Android, Windows, Nintendo Switch, Fire OS, macOS, Xbox One, Xbox Series X/S, Arcade, Playstation 4 y Playstation 5"/>
+
+                        <Label fx:id="diseniadorAL" GridPane.rowIndex="4" GridPane.columnIndex="1"/>
+
+                        <Label text="Plataformas" GridPane.rowIndex="5" GridPane.columnIndex="0"/>
+                        <Label fx:id="plataformaAL"
+
                                wrapText="true"
                                GridPane.rowIndex="5" GridPane.columnIndex="1"/>
 
                         <Label text="Género" GridPane.rowIndex="6" GridPane.columnIndex="0"/>
-                        <Label text="Carreras"
+
+                        <Label text="Carreras"/>
+
+                        <Label fx:id="generoAL"
+
                                wrapText="true"
                                GridPane.rowIndex="6" GridPane.columnIndex="1"/>
 
                         <Label text="Modos de juego" GridPane.rowIndex="7" GridPane.columnIndex="0"/>
+
                         <Label text="Un jugador y Multijugador" GridPane.rowIndex="7" GridPane.columnIndex="1"/>
+
+                        <Label fx:id="modoAL" GridPane.rowIndex="7" GridPane.columnIndex="1"/>
+
 
                     </GridPane>
 
@@ -101,11 +134,16 @@
                         <!--Blue Rabbit-->
                         <HBox spacing="20" alignment="TOP_LEFT">
 
+
                             <Label text="Blue Rabbit"/>
 
-                            <ImageView fitWidth="180" fitHeight="220"/>
+                            <Label text="AL"/>
+
+
+                            <ImageView fx:id="sekiro_personaje" fitWidth="180" fitHeight="220"/>
 
                             <VBox alignment="TOP_LEFT">
+
 
                                 <Text wrappingWidth="300" text="El Conejo Azul es una figura enigmática que habita en los márgenes del sistema del Drive Syndicate. No aparece en los registros oficiales, pero sus huellas digitales están presentes en cada gran anomalía de la red de carreras.
                                 &#10;&#10;Se le describe como un corredor imposible de rastrear, capaz de anticipar trazadas y eventos como si el circuito ya hubiera sido escrito antes de existir. Su identidad nunca ha sido confirmada: algunos creen que es un piloto humano excepcional; otros, que es una inteligencia artificial autónoma nacida dentro del propio Syndicate.
@@ -156,11 +194,43 @@
                                 &#10;&#10;A diferencia de otros corredores, The ALK no participa en carreras como un competidor tradicional. Su presencia está asociada a eventos de alta inestabilidad, donde el control del Syndicate sobre el entorno es más débil.
                                 &#10;&#10;The ALK es conocido por un estilo de conducción agresivo y preciso, basado en la explotación extrema de las físicas del sistema."/>
 
+                                <Text fx:id="descripcionP1" wrappingWidth="300"/>
+
+
                             </VBox>
 
                         </HBox>
 
                     </VBox>
+
+
+                    <!--tablePremios-->
+
+                    <VBox spacing="10">
+
+                        <Label text="Premios"/>
+
+                        <GridPane fx:id="gridPremios" hgap="10" vgap="5">
+
+                            <columnConstraints>
+                                <ColumnConstraints percentWidth="15"/>
+                                <ColumnConstraints percentWidth="35"/>
+                                <ColumnConstraints percentWidth="35"/>
+                                <ColumnConstraints percentWidth="15"/>
+                            </columnConstraints>
+
+                            <Label text="Año" GridPane.rowIndex="0" GridPane.columnIndex="0"/>
+                            <Label text="Premios" GridPane.rowIndex="0" GridPane.columnIndex="1"/>
+                            <Label text="Categoría" GridPane.rowIndex="0" GridPane.columnIndex="2"/>
+                            <Label text="Resultado" GridPane.rowIndex="0" GridPane.columnIndex="3"/>
+
+                        </GridPane>
+
+                    </VBox>
+
+                </VBox>
+
+
             </content>
 
         </ScrollPane>

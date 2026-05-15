@@ -15,7 +15,7 @@
 
     <top>
         <!--header-->
-        <HBox alignment="CENTER_LEFT" spacing="20" >
+        <HBox alignment="CENTER_LEFT" spacing="20">
 
             <ImageView fx:id="logoHeader" id="logoHeader" fitWidth="170" preserveRatio="true"/>
 
@@ -44,8 +44,12 @@
                     <VBox alignment="CENTER_LEFT">
                         <Label text="Minecraft"/>
 
+
                         <Text wrappingWidth="300" text="Minecraft es un videojuego de construcción de tipo «mundo abierto» o en inglés sandbox creado originalmente por el sueco Markus Persson (conocido comúnmente como «Notch»), que creó posteriormente Mojang Studios (actualmente parte de Microsoft).
                         &#10;&#10;Está programado en el lenguaje de programación Java para la versión Java Edition y posteriormente desarrollado en C++ para la versión de Bedrock Edition. Minecraft es un juego de mundo abierto, y no tiene un fin claramente definido (aunque sí que tiene una dimensión llamada a sí misma 'The End', o en español 'El Final' en donde después de entrar y matar a la dragona aparecen los créditos del juego y un poema)."/>
+
+                        <Text fx:id="descripcionMC" wrappingWidth="300"/>
+
 
                     </VBox>
 
@@ -57,8 +61,12 @@
                             <ColumnConstraints percentWidth="70"/>
                         </columnConstraints>
 
+
                         <Label text="Minecraft"
                                styleClass="title_table"
+
+                        <Label fx:id="tituloMC2"
+
                                GridPane.columnSpan="2"
                                GridPane.rowIndex="0"/>
 
@@ -69,28 +77,50 @@
                                    fx:id="sekiroImage"/>
 
                         <Label text="Desarrollador" GridPane.rowIndex="2" GridPane.columnIndex="0"/>
+
                         <Label text="Mojang Studios" GridPane.rowIndex="2" GridPane.columnIndex="1"/>
 
                         <Label text="Distribuidor" GridPane.rowIndex="3" GridPane.columnIndex="0"/>
                         <Label text="Mojang, Xbox Game Studios y Sony Computer Entertainment"
+
+                        <Label fx:id="desarrolladorMC" GridPane.rowIndex="2" GridPane.columnIndex="1"/>
+
+                        <Label text="Distribuidor" GridPane.rowIndex="3" GridPane.columnIndex="0"/>
+                        <Label fx:id="distribuidorMC"
+
                                wrapText="true"
                                GridPane.rowIndex="3" GridPane.columnIndex="1"/>
 
                         <Label text="Diseñador" GridPane.rowIndex="4" GridPane.columnIndex="0"/>
+
                         <Label text="Kristofer Zetterstrand" GridPane.rowIndex="4" GridPane.columnIndex="1"/>
 
                         <Label text="Plataformas" GridPane.rowIndex="5" GridPane.columnIndex="0"/>
                         <Label text="Windows, macOS, Linux, Android, iOS, iPadOS, Xbox 360, Xbox One, Xbox Series X/S, Playstation 3, Playstation 4, Playstation 5, Playstation Vita, Raspberry Pi, Wii U, Nintendo Switch, New Nintendo 3DS, Windows Phone, Fire OS, tvOS, Apple TV"
+
+                        <Label fx:id="diseniadorMC" GridPane.rowIndex="4" GridPane.columnIndex="1"/>
+
+                        <Label text="Plataformas" GridPane.rowIndex="5" GridPane.columnIndex="0"/>
+                        <Label fx:id="plataformaMC"
+
                                wrapText="true"
                                GridPane.rowIndex="5" GridPane.columnIndex="1"/>
 
                         <Label text="Género" GridPane.rowIndex="6" GridPane.columnIndex="0"/>
+
                         <Label text="Mundo abierto, Supervivencia"
+
+                        <Label fx:id="generoMC"
+
                                wrapText="true"
                                GridPane.rowIndex="6" GridPane.columnIndex="1"/>
 
                         <Label text="Modos de juego" GridPane.rowIndex="7" GridPane.columnIndex="0"/>
+
                         <Label text="Un jugador y Multijugador" GridPane.rowIndex="7" GridPane.columnIndex="1"/>
+
+                        <Label fx:id="modoMC" GridPane.rowIndex="7" GridPane.columnIndex="1"/>
+
 
                     </GridPane>
 
@@ -102,11 +132,16 @@
                         <!--Steve-->
                         <HBox spacing="20" alignment="TOP_LEFT">
 
+
                             <Label text="Steve"/>
 
-                            <ImageView fitWidth="180" fitHeight="220"/>
+                            <Label text="Minecraft"/>
+
+
+                            <ImageView fx:id="sekiro_personaje" fitWidth="180" fitHeight="220"/>
 
                             <VBox alignment="TOP_LEFT">
+
 
                                 <Text wrappingWidth="300" text="Steve es una de las nueve pieles de personajes de jugador predeterminadas disponibles para jugadores de versiones contemporáneas de Minecraft.
                                 &#10;&#10;Steve carece de una historia de fondo oficial de los desarrolladores de Minecraft, ya que pretende ser un avatar de jugador personalizable y funciona como marcador de posición en lugar de ser un personaje predefinido.
@@ -115,23 +150,29 @@
                             </VBox>
 
 
+                                <Text fx:id="descripcionP1" wrappingWidth="300"/>
+
+                            </VBox>
+
+                        </HBox>
+
+
                     </VBox>
 
                     <!--tablePremios-->
 
-                    <GridPane hgap="10" vgap="5">
+                    <VBox spacing="10">
 
-                        <columnConstraints>
-                            <ColumnConstraints percentWidth="15"/>
-                            <ColumnConstraints percentWidth="35"/>
-                            <ColumnConstraints percentWidth="35"/>
-                            <ColumnConstraints percentWidth="15"/>
-                        </columnConstraints>
+                        <Label text="Premios"/>
 
-                        <Label text="Año" GridPane.rowIndex="0" GridPane.columnIndex="0"/>
-                        <Label text="Premios" GridPane.rowIndex="0" GridPane.columnIndex="1"/>
-                        <Label text="Categoría" GridPane.rowIndex="0" GridPane.columnIndex="2"/>
-                        <Label text="Resultado" GridPane.rowIndex="0" GridPane.columnIndex="3"/>
+                        <GridPane fx:id="gridPremios" hgap="10" vgap="5">
+
+                            <columnConstraints>
+                                <ColumnConstraints percentWidth="15"/>
+                                <ColumnConstraints percentWidth="35"/>
+                                <ColumnConstraints percentWidth="35"/>
+                                <ColumnConstraints percentWidth="15"/>
+                            </columnConstraints>
 
 
                         <Label text="2011" GridPane.rowIndex="1" GridPane.columnIndex="0" GridPane.rowSpan="7"/>
@@ -175,6 +216,16 @@
                         <Label text="Nominado" GridPane.rowIndex="17" GridPane.columnIndex="3"/>
 
                     </GridPane>
+
+                            <Label text="Año" GridPane.rowIndex="0" GridPane.columnIndex="0"/>
+                            <Label text="Premios" GridPane.rowIndex="0" GridPane.columnIndex="1"/>
+                            <Label text="Categoría" GridPane.rowIndex="0" GridPane.columnIndex="2"/>
+                            <Label text="Resultado" GridPane.rowIndex="0" GridPane.columnIndex="3"/>
+
+                        </GridPane>
+
+                    </VBox>
+
 
                 </VBox>
 

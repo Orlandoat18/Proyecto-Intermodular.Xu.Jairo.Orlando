@@ -102,3 +102,66 @@ VALUES (2021, 'DICE Awards', 'Mejor Dirección Artística');
 
 INSERT INTO Premio (Año, Nombre_Premio, Categoría)
 VALUES (2022, 'Steam Awards', 'Juego Más Innovador');
+
+--INSERT DE DESARROLLADOR
+
+INSERT INTO Desarrollador (Nombre_Desarrollador, Pais_Desarrollador, Ciudad_Desarrollador, Fecha_fundacion_Des, Descripcion_Des)
+VALUES ('FromSoftware','Japón', 'Tokio','1986-11-01','FromSoftware es una empresa japonesa de desarrollo de videojuegos reconocida por 
+crear títulos de acción desafiantes y ambientaciones oscuras e inmersivas, como Sekiro y Dark Souls.');
+
+INSERT INTO Desarrollador (Nombre_Desarrollador, Pais_Desarrollador, Ciudad_Desarrollador, Fecha_fundacion_Des, Descripcion_Des)
+VALUES ('Mojang Studios','Suecia','Estocolmo','2009-05-01','Mojang Studios es un estudio de desarrollo sueco conocido mundialmente por 
+crear Minecraft, uno de los videojuegos más populares e influyentes de la historia.');
+
+INSERT INTO Desarrollador (Nombre_Desarrollador, Pais_Desarrollador, Ciudad_Desarrollador, Fecha_fundacion_Des, Descripcion_Des)
+VALUES ('Santa Monica Studio','Estados Unidos','Los Ángeles','1999-01-01','Santa Monica Studio es un estudio perteneciente a Sony 
+Interactive Entertainment reconocido principalmente por desarrollar la saga God of War.');
+
+INSERT INTO Desarrollador (Nombre_Desarrollador, Pais_Desarrollador, Ciudad_Desarrollador, Fecha_fundacion_Des, Descripcion_Des)
+VALUES ('Team Cherry','Australia','Adelaida','2014-01-01','Team Cherry es un estudio independiente australiano conocido por desarrollar 
+Hollow Knight, un exitoso videojuego estilo metroidvania.');
+
+INSERT INTO Desarrollador (Nombre_Desarrollador, Pais_Desarrollador, Ciudad_Desarrollador, Fecha_fundacion_Des, Descripcion_Des)
+VALUES ('Gameloft Barcelona','España','Barcelona','1999-12-01','Gameloft Barcelona es un estudio especializado en videojuegos 
+de carreras arcade y responsable del desarrollo de Asphalt Legends Unite.');
+
+
+--INSERT DE DISTRIBUIDOR
+
+INSERT INTO Distribuidor (Nombre_Distribuidor, Pais_Distribuidor, Ciudad_Distribuidor, Fecha_fundacion_Dis, Descripcion_Dis)
+VALUES ('Activision','Estados Unidos','Santa Monica','1979-10-01','Activision es una empresa estadounidense dedicada a la 
+distribución y publicación de videojuegos reconocidos mundialmente.');
+
+INSERT INTO Distribuidor (Nombre_Distribuidor, Pais_Distribuidor, Ciudad_Distribuidor, Fecha_fundacion_Dis, Descripcion_Dis)
+VALUES ('Xbox Game Studios','Estados Unidos','Redmond','2001-03-27','Xbox Game Studios es la división de videojuegos de 
+Microsoft encargada de publicar y distribuir títulos para Xbox y PC.');
+
+INSERT INTO Distribuidor (Nombre_Distribuidor, Pais_Distribuidor, Ciudad_Distribuidor, Fecha_fundacion_Dis, Descripcion_Dis)
+VALUES ('Sony Interactive Entertainment','Japón','Tokio','1993-11-16','Sony Interactive Entertainment es la compañía 
+responsable de PlayStation y distribuye numerosos videojuegos exclusivos.');
+
+INSERT INTO Distribuidor (Nombre_Distribuidor, Pais_Distribuidor, Ciudad_Distribuidor, Fecha_fundacion_Dis, Descripcion_Dis)
+VALUES ('Team Cherry','Australia','Adelaida','2014-01-01','Team Cherry también se encargó de la distribución 
+independiente de Hollow Knight en diferentes plataformas.');
+
+INSERT INTO Distribuidor (Nombre_Distribuidor, Pais_Distribuidor, Ciudad_Distribuidor, Fecha_fundacion_Dis, Descripcion_Dis)
+VALUES ('Gameloft','Francia','París','1999-12-14','Gameloft es una empresa francesa especializada en videojuegos 
+para dispositivos móviles y distribución de títulos arcade.');
+
+--INSERT DE MODO DE JUEGO
+
+INSERT INTO ModoDeJuego (Nombre_Modo, Descripcion_Modo)
+VALUES ('Un jugador','Modo de juego donde una sola persona controla la partida y progresa individualmente.');
+
+INSERT INTO ModoDeJuego (Nombre_Modo, Descripcion_Modo)
+VALUES ('Multijugador','Modo de juego que permite la participación de varios jugadores de manera local o en línea.');
+
+INSERT INTO ModoDeJuego (Nombre_Modo, Descripcion_Modo)
+VALUES ('Cooperativo','Modo de juego en el que varios jugadores colaboran para completar objetivos juntos.');
+
+INSERT INTO ModoDeJuego (Nombre_Modo, Descripcion_Modo)
+VALUES ('Supervivencia','Modo centrado en la gestión de recursos, exploración y enfrentamiento contra enemigos.');
+
+INSERT INTO ModoDeJuego (Nombre_Modo, Descripcion_Modo)
+VALUES ('Competitivo','Modo de juego enfocado en enfrentamientos entre jugadores para alcanzar la victoria.');
+
