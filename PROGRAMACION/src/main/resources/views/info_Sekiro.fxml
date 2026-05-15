@@ -12,17 +12,13 @@
             prefHeight="400.0" prefWidth="600.0">
     <top>
         <!--header-->
-        <HBox spacing="20" alignment="CENTER_LEFT">
+        <HBox alignment="CENTER_LEFT" spacing="20">
 
-            <ImageView fx:id="logoHeader" fitHeight="80" fitWidth="100"/>
+            <ImageView fx:id="logoHeader" id="logoHeader" fitWidth="170" preserveRatio="true"/>
 
-            <HBox spacing="15">
+            <Label text="LA WIKI RETRO DE LOS VIDEOJUEGOS"/>
 
-                <Button fx:id="btnInicio" text="Inicio" onAction="#irInicio"/>
-                <Button text="Sobre nosotros"/>
-                <Button text="Inicia sesión"/>
-
-            </HBox>
+            <Button fx:id="btnInicio" text="Inicio" onAction="#irInicio"/>
 
         </HBox>
 
@@ -168,7 +164,8 @@
 
                         <Label text="2018" GridPane.rowIndex="1" GridPane.columnIndex="0" GridPane.rowSpan="7"/>
 
-                        <Label text="Game Critics Awards" GridPane.rowIndex="1" GridPane.columnIndex="1" GridPane.rowSpan="4"/>
+                        <Label text="Game Critics Awards" GridPane.rowIndex="1" GridPane.columnIndex="1"
+                               GridPane.rowSpan="4"/>
 
                         <Label text="Mejor Show" GridPane.rowIndex="1" GridPane.columnIndex="2"/>
                         <Label text="Nominado" GridPane.rowIndex="1" GridPane.columnIndex="3"/>
