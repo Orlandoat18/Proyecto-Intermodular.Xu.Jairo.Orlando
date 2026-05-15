@@ -67,7 +67,9 @@
                                    fx:id="sekiroImage"/>
 
                         <Label text="Desarrollador" GridPane.rowIndex="2" GridPane.columnIndex="0"/>
-                        <Label fx:id="desarrolladorSekiro" GridPane.rowIndex="2" GridPane.columnIndex="1"/>
+                        <Label fx:id="desarrolladorSekiro"
+                               wrapText="true"
+                               GridPane.rowIndex="2" GridPane.columnIndex="1"/>
 
                         <Label text="Distribuidor" GridPane.rowIndex="3" GridPane.columnIndex="0"/>
                         <Label fx:id="distribuidorSekiro"
@@ -90,7 +92,9 @@
                                GridPane.rowIndex="6" GridPane.columnIndex="1"/>
 
                         <Label text="Modos de juego" GridPane.rowIndex="7" GridPane.columnIndex="0"/>
-                        <Label fx:id="modoSekiro" GridPane.rowIndex="7" GridPane.columnIndex="1"/>
+                        <Label fx:id="modoSekiro"
+                               wrapText="true"
+                               GridPane.rowIndex="7" GridPane.columnIndex="1"/>
 
                     </GridPane>
 

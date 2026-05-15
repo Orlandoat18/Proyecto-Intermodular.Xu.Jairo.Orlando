@@ -42,16 +42,9 @@
 
                     <!--introduccion-->
                     <VBox alignment="CENTER_LEFT">
-
-                        <Label text="Asphalt Legends"/>
-
-                        <Text wrappingWidth="300" text="Asphalt Legends (antes conocido como Asphalt 9: Legends y luego como Asphalt Legends Unite) es un videojuego de carreras desarrollado y publicado por Gameloft como parte de la serie Asphalt.
-                        &#10;&#10;A comparación de entregas pasadas, las mecánicas del juego se acercan más a un simulador de carreras, como por ejemplo Forza Horizon 4 o Real Racing 3, en los cuales al tomar una curva el auto desacelera para evitar salirse de la pista o volcar, si se sale de la carretera marcada se perderá velocidad como por ejemplo ir por la acera, pasto, arena o nieve. Para solucionar esto Asphalt 9 cuenta con el nitro."/>
-
                         <Label text="Asphalt Legends Unite"/>
 
                         <Text fx:id="descripcionAL" wrappingWidth="300"/>
-
 
                     </VBox>
 
@@ -64,11 +57,7 @@
                         </columnConstraints>
 
 
-                        <Label text="Asphalt Legends"
-                               styleClass="title_table"/>
-
-                        <Label fx:id="tituloAL2"
-
+                        <Label text="Asphalt Legends Unite"
                                GridPane.columnSpan="2"
                                GridPane.rowIndex="0"/>
 
@@ -76,53 +65,37 @@
                                    GridPane.rowIndex="1"
                                    fitWidth="300"
                                    preserveRatio="true"
-                                   fx:id="sekiroImage"/>
+                                   fx:id="alImage"/>
 
                         <Label text="Desarrollador" GridPane.rowIndex="2" GridPane.columnIndex="0"/>
-
-                        <Label text="Gameloft Barcelona" GridPane.rowIndex="2" GridPane.columnIndex="1"/>
-
-                        <Label text="Distribuidor" GridPane.rowIndex="3" GridPane.columnIndex="0"/>
-                        <Label text="Gameloft"/>
-
-                        <Label fx:id="desarrolladorAL" GridPane.rowIndex="2" GridPane.columnIndex="1"/>
+                        <Label fx:id="desarrolladorAL"
+                               wrapText="true"
+                               GridPane.rowIndex="2" GridPane.columnIndex="1"/>
 
                         <Label text="Distribuidor" GridPane.rowIndex="3" GridPane.columnIndex="0"/>
                         <Label fx:id="distribuidorAL"
-
                                wrapText="true"
                                GridPane.rowIndex="3" GridPane.columnIndex="1"/>
 
                         <Label text="Diseñador" GridPane.rowIndex="4" GridPane.columnIndex="0"/>
-
-                        <Label text="Vincent Labelle, Martin Courcy Y Nicolas Dubé" GridPane.rowIndex="4" GridPane.columnIndex="1"/>
-
-                        <Label text="Plataformas" GridPane.rowIndex="5" GridPane.columnIndex="0"/>
-                        <Label text="iOS, Android, Windows, Nintendo Switch, Fire OS, macOS, Xbox One, Xbox Series X/S, Arcade, Playstation 4 y Playstation 5"/>
-
-                        <Label fx:id="diseniadorAL" GridPane.rowIndex="4" GridPane.columnIndex="1"/>
+                        <Label fx:id="diseniadorAL"
+                               wrapText="true"
+                               GridPane.rowIndex="4" GridPane.columnIndex="1"/>
 
                         <Label text="Plataformas" GridPane.rowIndex="5" GridPane.columnIndex="0"/>
                         <Label fx:id="plataformaAL"
-
                                wrapText="true"
                                GridPane.rowIndex="5" GridPane.columnIndex="1"/>
 
                         <Label text="Género" GridPane.rowIndex="6" GridPane.columnIndex="0"/>
-
-                        <Label text="Carreras"/>
-
                         <Label fx:id="generoAL"
-
                                wrapText="true"
                                GridPane.rowIndex="6" GridPane.columnIndex="1"/>
 
                         <Label text="Modos de juego" GridPane.rowIndex="7" GridPane.columnIndex="0"/>
-
-                        <Label text="Un jugador y Multijugador" GridPane.rowIndex="7" GridPane.columnIndex="1"/>
-
-                        <Label fx:id="modoAL" GridPane.rowIndex="7" GridPane.columnIndex="1"/>
-
+                        <Label fx:id="modoAL"
+                               wrapText="true"
+                               GridPane.rowIndex="7" GridPane.columnIndex="1"/>
 
                     </GridPane>
 
@@ -131,71 +104,17 @@
                     <VBox spacing="20">
                         <Label text="Personaje"/>
 
-                        <!--Blue Rabbit-->
+                        <!--Driver Syndicate-->
                         <HBox spacing="20" alignment="TOP_LEFT">
 
 
-                            <Label text="Blue Rabbit"/>
+                            <Label text="Driver Syndicate"/>
 
-                            <Label text="AL"/>
-
-
-                            <ImageView fx:id="sekiro_personaje" fitWidth="180" fitHeight="220"/>
+                            <ImageView fx:id="driver_personaje" fitWidth="180" fitHeight="220"/>
 
                             <VBox alignment="TOP_LEFT">
-
-
-                                <Text wrappingWidth="300" text="El Conejo Azul es una figura enigmática que habita en los márgenes del sistema del Drive Syndicate. No aparece en los registros oficiales, pero sus huellas digitales están presentes en cada gran anomalía de la red de carreras.
-                                &#10;&#10;Se le describe como un corredor imposible de rastrear, capaz de anticipar trazadas y eventos como si el circuito ya hubiera sido escrito antes de existir. Su identidad nunca ha sido confirmada: algunos creen que es un piloto humano excepcional; otros, que es una inteligencia artificial autónoma nacida dentro del propio Syndicate.
-                                &#10;&#10;Su presencia se reconoce por tres elementos constantes: un resplandor azul que aparece brevemente en los sistemas corruptos, un emblema de orejas de conejo marcado en los datos intervenidos y una firma anónima que desafía directamente al control del sistema."/>
-
-                            </VBox>
-
-                        </HBox>
-
-                        <!--Red Fox-->
-                        <HBox spacing="20" alignment="TOP_LEFT">
-                            <Label text="Red Fox"/>
-
-                            <ImageView fitWidth="180" fitHeight="220"/>
-
-                            <VBox alignment="TOP_LEFT">
-
-                                <Text wrappingWidth="300"
-                                      text="Red Fox es un operador de élite vinculado a las capas internas del Drive Syndicate. A diferencia de los corredores comunes, su rol no se limita a competir: actúa como interceptor de rutas, manipulador de eventos y ejecutor de pruebas de control dentro del sistema."/>
-
-                            </VBox>
-
-                        </HBox>
-
-                        <!--Green Lizard-->
-                        <HBox spacing="20" alignment="TOP_LEFT">
-                            <Text text="Green Lizard"/>
-
-                            <ImageView fitWidth="180" fitHeight="220"/>
-
-                            <VBox alignment="TOP_LEFT">
-
-                                <Text wrappingWidth="300" text="Green Lizard es una entidad operativa asociada a las capas de infraestructura del Drive Syndicate, especializada en manipulación de sistemas de tráfico, simulación de rutas y alteración de datos en tiempo real durante eventos activos.
-                                &#10;&#10;A diferencia de otros agentes del Syndicate, Green Lizard no interactúa directamente con los corredores. Su presencia se detecta únicamente a través de cambios inesperados en la lógica del entorno de carrera."/>
-
-                            </VBox>
-                        </HBox>
-
-                        <!--The Alk-->
-                        <HBox spacing="20" alignment="TOP_LEFT">
-                            <Text text="The Alk"/>
-
-                            <ImageView fitWidth="180" fitHeight="220"/>
-
-                            <VBox alignment="TOP_LEFT">
-
-                                <Text wrappingWidth="300" text="The ALK es un corredor físico de alto rendimiento vinculado a operaciones no autorizadas dentro del Drive Syndicate. Su identidad real permanece desconocida, ya que nunca ha sido capturado ni verificado fuera de los eventos activos.
-                                &#10;&#10;A diferencia de otros corredores, The ALK no participa en carreras como un competidor tradicional. Su presencia está asociada a eventos de alta inestabilidad, donde el control del Syndicate sobre el entorno es más débil.
-                                &#10;&#10;The ALK es conocido por un estilo de conducción agresivo y preciso, basado en la explotación extrema de las físicas del sistema."/>
 
                                 <Text fx:id="descripcionP1" wrappingWidth="300"/>
-
 
                             </VBox>
 
@@ -229,7 +148,6 @@
                     </VBox>
 
                 </VBox>
-
 
             </content>
 
