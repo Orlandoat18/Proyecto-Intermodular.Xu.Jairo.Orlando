@@ -42,10 +42,10 @@
 
                     <!--introduccion-->
                     <VBox alignment="CENTER_LEFT">
-                        <Label text="Sekiro: Shadows Die Twice"/>
+                        <Label text="Minecraft"/>
 
-                        <Text wrappingWidth="300" text="Sekiro: Shadows Die Twice es un videojuego de acción-aventura desarrollado por FromSoftware y publicado por Activision. Fue dirigido por Hidetaka Miyazaki y su fecha de estreno fue el 22 de marzo de 2019 para PlayStation 4, Xbox One y Microsoft Windows. Su historia está protagonizada por un shinobi conocido como Sekiro, cuya misión es vengarse de un samurái que lo atacó y secuestró a su señor.
-                        &#10;&#10;Sekiro: Shadows Die Twice está ambientado en los últimos años del período Sengoku. Presenta un mundo marchito pero aún vibrante, construido a partir de una reinterpretación de la estética de inspiración japonesa, donde se desarrolla la historia de un shinobi solitario regido por el código del deber. El jugador recorre entornos tridimensionales abiertos, meticulosamente diseñados y llenos de secretos por descubrir, mientras utiliza todos los recursos a su disposición para enfrentarse a enemigos poderosos en una experiencia de juego única."/>
+                        <Text wrappingWidth="300" text="Minecraft es un videojuego de construcción de tipo «mundo abierto» o en inglés sandbox creado originalmente por el sueco Markus Persson (conocido comúnmente como «Notch»), que creó posteriormente Mojang Studios (actualmente parte de Microsoft).
+                        &#10;&#10;Está programado en el lenguaje de programación Java para la versión Java Edition y posteriormente desarrollado en C++ para la versión de Bedrock Edition. Minecraft es un juego de mundo abierto, y no tiene un fin claramente definido (aunque sí que tiene una dimensión llamada a sí misma 'The End', o en español 'El Final' en donde después de entrar y matar a la dragona aparecen los créditos del juego y un poema)."/>
 
                     </VBox>
 
@@ -57,7 +57,7 @@
                             <ColumnConstraints percentWidth="70"/>
                         </columnConstraints>
 
-                        <Label text="Sekiro: Shadows Die Twice"
+                        <Label text="Minecraft"
                                styleClass="title_table"
                                GridPane.columnSpan="2"
                                GridPane.rowIndex="0"/>
@@ -69,28 +69,28 @@
                                    fx:id="sekiroImage"/>
 
                         <Label text="Desarrollador" GridPane.rowIndex="2" GridPane.columnIndex="0"/>
-                        <Label text="FromSoftware y Yoshitaka Suzuki" GridPane.rowIndex="2" GridPane.columnIndex="1"/>
+                        <Label text="Mojang Studios" GridPane.rowIndex="2" GridPane.columnIndex="1"/>
 
                         <Label text="Distribuidor" GridPane.rowIndex="3" GridPane.columnIndex="0"/>
-                        <Label text="Humble Store, Steam, PlayStation Store, Microsoft Store y Stadia"
+                        <Label text="Mojang, Xbox Game Studios y Sony Computer Entertainment"
                                wrapText="true"
                                GridPane.rowIndex="3" GridPane.columnIndex="1"/>
 
                         <Label text="Diseñador" GridPane.rowIndex="4" GridPane.columnIndex="0"/>
-                        <Label text="Masaru Yamamura y Yuki Fukuda" GridPane.rowIndex="4" GridPane.columnIndex="1"/>
+                        <Label text="Kristofer Zetterstrand" GridPane.rowIndex="4" GridPane.columnIndex="1"/>
 
                         <Label text="Plataformas" GridPane.rowIndex="5" GridPane.columnIndex="0"/>
-                        <Label text="PlayStation 4, Xbox One y Microsoft Windows"
+                        <Label text="Windows, macOS, Linux, Android, iOS, iPadOS, Xbox 360, Xbox One, Xbox Series X/S, Playstation 3, Playstation 4, Playstation 5, Playstation Vita, Raspberry Pi, Wii U, Nintendo Switch, New Nintendo 3DS, Windows Phone, Fire OS, tvOS, Apple TV"
                                wrapText="true"
                                GridPane.rowIndex="5" GridPane.columnIndex="1"/>
 
                         <Label text="Género" GridPane.rowIndex="6" GridPane.columnIndex="0"/>
-                        <Label text="Acción-aventura, Soulslike y dark fantasy video game"
+                        <Label text="Mundo abierto, Supervivencia"
                                wrapText="true"
                                GridPane.rowIndex="6" GridPane.columnIndex="1"/>
 
                         <Label text="Modos de juego" GridPane.rowIndex="7" GridPane.columnIndex="0"/>
-                        <Label text="Un jugador" GridPane.rowIndex="7" GridPane.columnIndex="1"/>
+                        <Label text="Un jugador y Multijugador" GridPane.rowIndex="7" GridPane.columnIndex="1"/>
 
                     </GridPane>
 
@@ -99,67 +99,21 @@
                     <VBox spacing="20">
                         <Label text="Personaje"/>
 
-                        <!--sekiro-->
+                        <!--Steve-->
                         <HBox spacing="20" alignment="TOP_LEFT">
 
-                            <Label text="Sekiro"/>
+                            <Label text="Steve"/>
 
                             <ImageView fitWidth="180" fitHeight="220"/>
 
                             <VBox alignment="TOP_LEFT">
 
-                                <Text wrappingWidth="300" text="Es un shinobi que sirve a un joven señor descendiente de un antiguo linaje. Ligado a su honor, es hombre sereno y reservado, aunque también despiadado a la hora de completar su misión de venganza con los métodos que sean necesarios.
-                                &#10;&#10;Cuando Sekiro era niño sufrió las consecuencias de un conflicto que afectó a la población japonesa al final de la Era Sengoku. Tanto él como El Búho sobrevivieron a la batalla. El joven se dedicó a saquear algunos cadáveres hasta que se encontró con este guerrero. El Búho pasó ligeramente el filo de su espada a través de su rostro, dejándole una cicatriz que le marcó del mismo modo que a él. El shinobi le preguntó si tenía a alguien en su vida, y al deducir que se encontraba huérfano, le acogió bajo su amparo.
-                                &#10;&#10;Cuando comienza la historia, Sekiro pierde la vida al enfrentarse al líder del Clan Ashina, perdiendo al joven señor al que debía proteger. Durante ese combate también pierde su brazo izquierdo, y a cambio recibe una prótesis que mejora sus capacidades de combate. El código shinobi es absoluto, y lo guía hacia su venganza."/>
+                                <Text wrappingWidth="300" text="Steve es una de las nueve pieles de personajes de jugador predeterminadas disponibles para jugadores de versiones contemporáneas de Minecraft.
+                                &#10;&#10;Steve carece de una historia de fondo oficial de los desarrolladores de Minecraft, ya que pretende ser un avatar de jugador personalizable y funciona como marcador de posición en lugar de ser un personaje predefinido.
+                                &#10;&#10;Steve se convirtió en un personaje ampliamente reconocido en la industria de los videojuegos tras el éxito comercial y de crítica de la franquicia Minecraft."/>
 
                             </VBox>
 
-                        </HBox>
-
-                        <!--kuro-->
-                        <HBox spacing="20" alignment="TOP_LEFT">
-                            <Label text="Kuro"/>
-
-                            <ImageView fitWidth="180" fitHeight="220"/>
-
-                            <VBox alignment="TOP_LEFT">
-
-                                <Text wrappingWidth="300"
-                                      text="Kuro es parte integral de la trama del juego y de los eventos que se desarrollan durante el mismo. Es el único descendiente de un antiguo linaje misterioso y, al igual que los shinobi, está sólo en el mundo. Fue adoptado y criado por la familia Hirata. Al contrario que los niños de su edad, es tranquilo, tiene un corazón fuerte, y da una impresión natural de dignidad. Debido a su linaje es capturado por el Comandante del Clan Ashina, fallando el Lobo en su protección."/>
-
-                            </VBox>
-
-                        </HBox>
-
-                        <!--Isshin-->
-                        <HBox spacing="20" alignment="TOP_LEFT">
-                            <Text text="Isshin Ashina"/>
-
-                            <ImageView fitWidth="180" fitHeight="220"/>
-
-                            <VBox alignment="TOP_LEFT">
-
-                                <Text wrappingWidth="300" text="Isshin Ashina es el fundador del Clan Ashina y abuelo del Comandante Genichiro. Fue un kensei, un honorable guerrero japonés conocido por su maestría con la espada. Tiempo atrás, tomó el control de su región en una sola generación, fundando el clan y ganándose el título de Héroe del País del Norte.Cuando era joven, luchaba sin descanso, perfeccionando su técnica con la sangre de sus enemigos. Consolidó sus enseñanzas en el estilo Ashina, diseñado para asegurar el dominio y la supremacía de su clan.
-                                &#10;&#10;Durante los eventos del juego, Isshin Ashina se muestra como un hombre de avanzada edad. Es muy alto, de cabello canoso y complexión delgada. A menudo luce cansado, ya que suele permanecer en constante reposo bajo el cuidado de Emma."/>
-
-                            </VBox>
-                        </HBox>
-
-                        <!--Genichiro-->
-                        <HBox spacing="20" alignment="TOP_LEFT">
-                            <Text text="Genichiro Ashina"/>
-
-                            <ImageView fitWidth="180" fitHeight="220"/>
-
-                            <VBox alignment="TOP_LEFT">
-
-                                <Text wrappingWidth="300" text="Genichiro Ashina es el líder del Clan Ashina y nieto adoptivo de Isshin Ashina, el legendario espadachín y héroe del norte que fundó el clan. Aunque no nació como heredero legítimo, fue adoptado tras la muerte de su madre plebeya. Aun así, posee un profundo sentido del deber hacia Ashina y su gente.
-                                &#10;&#10;Con el país al borde de la derrota, Genichiro está dispuesto a recurrir incluso a medios sobrenaturales para proteger a su clan. Por ello, estudió artes heréticas y llegó a dominar el relámpago de Tomoe.
-                                &#10;&#10;Decidido a salvar Ashina a cualquier costo, Genichiro secuestra al joven señor Kuro para aprovechar los poderes extraordinarios ligados a su linaje."/>
-
-                            </VBox>
-
-                        </HBox>
 
                     </VBox>
 
@@ -180,73 +134,30 @@
                         <Label text="Resultado" GridPane.rowIndex="0" GridPane.columnIndex="3"/>
 
 
-                        <Label text="2018" GridPane.rowIndex="1" GridPane.columnIndex="0" GridPane.rowSpan="7"/>
+                        <Label text="2011" GridPane.rowIndex="1" GridPane.columnIndex="0" GridPane.rowSpan="7"/>
 
-                        <Label text="Game Critics Awards" GridPane.rowIndex="1" GridPane.columnIndex="1" GridPane.rowSpan="4"/>
+                        <Label text="Spike Video Game Award" GridPane.rowIndex="1" GridPane.columnIndex="1" GridPane.rowSpan="4"/>
 
-                        <Label text="Mejor Show" GridPane.rowIndex="1" GridPane.columnIndex="2"/>
+                        <Label text="Mejor juego independiente" GridPane.rowIndex="1" GridPane.columnIndex="2"/>
                         <Label text="Nominado" GridPane.rowIndex="1" GridPane.columnIndex="3"/>
 
-                        <Label text="Mejor juego original" GridPane.rowIndex="2" GridPane.columnIndex="2"/>
-                        <Label text="Nominado" GridPane.rowIndex="2" GridPane.columnIndex="3"/>
 
-                        <Label text="Mejor juego de consola" GridPane.rowIndex="3" GridPane.columnIndex="2"/>
-                        <Label text="Nominado" GridPane.rowIndex="3" GridPane.columnIndex="3"/>
+                        <Label text="2012" GridPane.rowIndex="8" GridPane.columnIndex="0" GridPane.rowSpan="6"/>
 
-                        <Label text="Mejor juego de acción/aventura" GridPane.rowIndex="4" GridPane.columnIndex="2"/>
-                        <Label text="Nominado" GridPane.rowIndex="4" GridPane.columnIndex="3"/>
-
-                        <Label text="Golden Joystick Awards" GridPane.rowIndex="5" GridPane.columnIndex="1"/>
-
-                        <Label text="Juego más esperado" GridPane.rowIndex="5" GridPane.columnIndex="2"/>
-                        <Label text="Nominado" GridPane.rowIndex="5" GridPane.columnIndex="3"/>
-
-                        <Label text="Japan Game Awards" GridPane.rowIndex="6" GridPane.columnIndex="1"/>
-
-                        <Label text="Premio a la excelencia" GridPane.rowIndex="6" GridPane.columnIndex="2"/>
-                        <Label text="Ganador" GridPane.rowIndex="6" GridPane.columnIndex="3"/>
-
-                        <Label text="Golden Joystick Awards" GridPane.rowIndex="7" GridPane.columnIndex="1"/>
-
-                        <Label text="Mejor diseño visual" GridPane.rowIndex="7" GridPane.columnIndex="2"/>
-                        <Label text="Nominado" GridPane.rowIndex="7" GridPane.columnIndex="3"/>
-
-
-                        <Label text="2019" GridPane.rowIndex="8" GridPane.columnIndex="0" GridPane.rowSpan="6"/>
-
-                        <Label text="The Game Awards 2019"
+                        <Label text="Premio Especial BAFTA"
                                GridPane.rowIndex="8"
                                GridPane.columnIndex="1"
                                GridPane.rowSpan="4"/>
 
-                        <Label text="Juego del año" GridPane.rowIndex="8" GridPane.columnIndex="2"/>
+                        <Label text="Mejor juego familiar" GridPane.rowIndex="8" GridPane.columnIndex="2"/>
                         <Label text="Ganador" GridPane.rowIndex="8" GridPane.columnIndex="3"/>
 
-                        <Label text="Mejor dirección" GridPane.rowIndex="9" GridPane.columnIndex="2"/>
-                        <Label text="Nominado" GridPane.rowIndex="9" GridPane.columnIndex="3"/>
 
-                        <Label text="Mejor dirección de arte" GridPane.rowIndex="10" GridPane.columnIndex="2"/>
-                        <Label text="Nominado" GridPane.rowIndex="10" GridPane.columnIndex="3"/>
+                        <Label text="2015" GridPane.rowIndex="14" GridPane.columnIndex="0" GridPane.rowSpan="4"/>
 
-                        <Label text="Mejor diseño de audio" GridPane.rowIndex="11" GridPane.columnIndex="2"/>
-                        <Label text="Nominado" GridPane.rowIndex="11" GridPane.columnIndex="3"/>
+                        <Label text="Premio BAFTA" GridPane.rowIndex="14" GridPane.columnIndex="1"/>
 
-                        <Label text="23 Annual D.I.C.E. Awards" GridPane.rowIndex="12" GridPane.columnIndex="1"/>
-
-                        <Label text="Juego del año de acción" GridPane.rowIndex="12" GridPane.columnIndex="2"/>
-                        <Label text="Nominado" GridPane.rowIndex="12" GridPane.columnIndex="3"/>
-
-                        <Label text="Game Developers Choice Awards" GridPane.rowIndex="13" GridPane.columnIndex="1"/>
-
-                        <Label text="Juego del año" GridPane.rowIndex="13" GridPane.columnIndex="2"/>
-                        <Label text="Ganador" GridPane.rowIndex="13" GridPane.columnIndex="3"/>
-
-
-                        <Label text="2020" GridPane.rowIndex="14" GridPane.columnIndex="0" GridPane.rowSpan="4"/>
-
-                        <Label text="SXSW Gaming Awards" GridPane.rowIndex="14" GridPane.columnIndex="1"/>
-
-                        <Label text="Excelencia en logro visual" GridPane.rowIndex="14" GridPane.columnIndex="2"/>
+                        <Label text="Mejor juego familiar" GridPane.rowIndex="14" GridPane.columnIndex="2"/>
                         <Label text="Ganador" GridPane.rowIndex="14" GridPane.columnIndex="3"/>
 
                         <Label text="British Academy Games Awards"
