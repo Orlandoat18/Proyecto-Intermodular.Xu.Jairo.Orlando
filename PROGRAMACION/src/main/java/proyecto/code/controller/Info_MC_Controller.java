@@ -61,7 +61,7 @@ public class Info_MC_Controller {
 
             info_MC_Service.cargarImagen(mcImage, "/img/minecraft.jpg");
 
-            info_MC_Service.cargarImagen(steve_personaje, "/img/PAGINA_PK.jpg");
+            info_MC_Service.cargarImagen(steve_personaje, "/img/personaje/Steve.jpg");
 
             cargarDatos();
 

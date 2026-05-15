@@ -75,7 +75,7 @@ public class Info_AL_Controller {
 
         try {
 
-            Videojuego videojuego = Info_AL_Service.getVideojuego("Minecraft");
+            Videojuego videojuego = Info_AL_Service.getVideojuego("Asphalt Legends Unite");
 
             if (videojuego == null) return;
 

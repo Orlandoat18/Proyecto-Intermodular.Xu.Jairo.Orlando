@@ -60,7 +60,7 @@ public class Info_HK_Controller {
 
             info_HK_Service.cargarImagen(hkImage, "/img/hollowknight.jpg");
 
-            info_HK_Service.cargarImagen(knight_personaje, "/img/PAGINA_PK.jpg");
+            info_HK_Service.cargarImagen(knight_personaje, "/img/personaje/caballero.jpg");
 
             cargarDatos();
         }catch (cargaException e){
@@ -73,7 +73,7 @@ public class Info_HK_Controller {
 
         try {
 
-            Videojuego videojuego = Info_HK_Service.getVideojuego("Minecraft");
+            Videojuego videojuego = Info_HK_Service.getVideojuego("Hollow Knight");
 
             if (videojuego == null) return;
 

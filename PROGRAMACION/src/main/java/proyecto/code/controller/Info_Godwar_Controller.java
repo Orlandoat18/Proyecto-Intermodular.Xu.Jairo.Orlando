@@ -61,7 +61,7 @@ public class Info_Godwar_Controller {
 
             info_Godwar_Service.cargarImagen(gwImage, "/img/Godofwar.jpg");
 
-            info_Godwar_Service.cargarImagen(kratos_personaje, "/img/Krato.jpg");
+            info_Godwar_Service.cargarImagen(kratos_personaje, "/img/personaje/Krato.jpg");
 
             cargarDatos();
 
@@ -75,7 +75,7 @@ public class Info_Godwar_Controller {
 
         try {
 
-            Videojuego videojuego = Info_Godwar_Service.getVideojuego("Minecraft");
+            Videojuego videojuego = Info_Godwar_Service.getVideojuego("God of War");
 
             if (videojuego == null) return;
 
