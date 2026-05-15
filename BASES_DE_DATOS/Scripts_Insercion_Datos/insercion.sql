@@ -165,3 +165,21 @@ VALUES ('Supervivencia','Modo centrado en la gestión de recursos, exploración 
 INSERT INTO ModoDeJuego (Nombre_Modo, Descripcion_Modo)
 VALUES ('Competitivo','Modo de juego enfocado en enfrentamientos entre jugadores para alcanzar la victoria.');
 
+
+--INSERT DE DISEÑADOR
+
+INSERT INTO Diseñador (Nombre_Diseñador, Apellido_Diseñador, Fecha_nacimiento, Nacionalidad)
+VALUES ('Hidetaka','Miyazaki','1974-01-01','Japonesa');
+
+INSERT INTO Diseñador (Nombre_Diseñador, Apellido_Diseñador, Fecha_nacimiento, Nacionalidad)
+VALUES ('Markus','Persson','1979-06-01','Sueca');
+
+INSERT INTO Diseñador (Nombre_Diseñador, Apellido_Diseñador, Fecha_nacimiento, Nacionalidad)
+VALUES ('Cory','Barlog','1975-09-02','Estadounidense');
+
+INSERT INTO Diseñador (Nombre_Diseñador, Apellido_Diseñador, Fecha_nacimiento, Nacionalidad)
+VALUES ('Ari','Gibson','1984-01-01','Australiana');
+
+INSERT INTO Diseñador (Nombre_Diseñador, Apellido_Diseñador, Fecha_nacimiento, Nacionalidad)
+VALUES ('Alexandre','Tan','1980-01-01','Francesa');
+
