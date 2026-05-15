@@ -12,17 +12,13 @@
             prefHeight="400.0" prefWidth="600.0">
     <top>
         <!--header-->
-        <HBox spacing="20" alignment="CENTER_LEFT">
+        <HBox alignment="CENTER_LEFT" spacing="20" >
 
-            <ImageView fx:id="logoHeader" fitHeight="80" fitWidth="100"/>
+            <ImageView fx:id="logoHeader" id="logoHeader" fitWidth="170" preserveRatio="true"/>
 
-            <HBox spacing="15">
+            <Label text="LA WIKI RETRO DE LOS VIDEOJUEGOS"/>
 
-                <Button fx:id="btnInicio" text="Inicio" onAction="#irInicio"/>
-                <Button text="Sobre nosotros"/>
-                <Button text="Inicia sesión"/>
-
-            </HBox>
+            <Button fx:id="btnInicio" text="Inicio" onAction="#irInicio"/>
 
         </HBox>
 

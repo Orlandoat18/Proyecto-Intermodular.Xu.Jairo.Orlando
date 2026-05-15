@@ -69,14 +69,23 @@ create table ModoDeJuego(
     primary key (Id_ModoJuego)
 );
 
+create table Personaje(
+    Id_Personaje int not null auto_increment,
+    Nombre_Personaje varchar(150) not null,
+    Descripcion_Personaje text not null,
+    primary key (Id_Personaje)
+);
+
 create table Videojuego(
     Id_Videojuego int not null auto_increment,
     Titulo varchar(150) not null,
     Descripcion_Videojuego text not null,
     Clasificacion_edad varchar(10) not null,
     Id_Desarrollador int not null,
+    Id_Personaje int not null,
     primary key (Id_Videojuego),
-    foreign key (Id_Desarrollador) references Desarrollador(Id_Desarrollador)
+    foreign key (Id_Desarrollador) references Desarrollador(Id_Desarrollador),
+    foreign key (Id_Personaje) references Personaje(Id_Personaje)
 );
 
 create table Videojuego_Distribuidor(

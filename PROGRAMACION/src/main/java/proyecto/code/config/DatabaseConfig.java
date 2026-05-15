@@ -10,6 +10,7 @@ public class DatabaseConfig {
     private static final String pwd = "mysql";
 
     public static Connection getConnection() throws SQLException {
+        System.out.println("Conectado a MYSQL!!");
         return DriverManager.getConnection(url, user, pwd);
     }
 }
