@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.scene.image.ImageView?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            stylesheets="/styles/info.css"
+            fx:controller="proyecto.code.controller.Info_Godwar_Controller"
+            prefHeight="400.0" prefWidth="600.0">
+
+    <top>
+        <!--header-->
+        <HBox alignment="CENTER_LEFT" spacing="20">
+
+            <ImageView fx:id="logoHeader" id="logoHeader" fitWidth="170" preserveRatio="true"/>
+
+            <Label text="LA WIKI RETRO DE LOS VIDEOJUEGOS"/>
+
+            <Button fx:id="btnInicio" text="Inicio" onAction="#irInicio"/>
+
+        </HBox>
+
+    </top>
+
+    <!--main-->
+    <center>
+
+        <ScrollPane fitToWidth="true">
+
+            <content>
+
+                <VBox spacing="20">
+
+                    <padding>
+                        <Insets top="20" bottom="20" left="40" right="40"/>
+                    </padding>
+
+                    <!--introduccion-->
+                    <VBox alignment="CENTER_LEFT">
+
+                        <Label text="God of War: Ragnarok"/>
+
+                        <Text wrappingWidth="300" text="God of War Ragnarök es un videojuego de acción y aventura hack and slash en tercera persona desarrollado por Santa Monica Studio y publicado por Sony Interactive Entertainment. Se lanzó en todo el mundo el 9 de noviembre de 2022 para PlayStation 4 y PlayStation 5
+                        &#10;&#10;La jugabilidad es similar a la entrega anterior de 2018. Presenta combate basado en combos, así como elementos de rompecabezas y juegos de rol. La jugabilidad se ha renovado con respecto al juego anterior: además de las armas principales de Kratos, un hacha de batalla mágica y sus espadas de doble cadena, también adquiere una lanza mágica y su escudo se ha vuelto más versátil, con diferentes tipos de escudos que tienen diferentes habilidades ofensivas y defensivas."/>
+
+                        <Label text="God of War"/>
+
+                        <Text fx:id="descripcionGodWar" wrappingWidth="300"/>
+
+
+                    </VBox>
+
+                    <!--table-->
+                    <GridPane hgap="10" vgap="10">
+
+                        <columnConstraints>
+                            <ColumnConstraints percentWidth="30"/>
+                            <ColumnConstraints percentWidth="70"/>
+                        </columnConstraints>
+
+
+                        <Label text="God of War: Ragnarok"
+                               styleClass="title_table"/>
+
+                        <Label fx:id="tituloGodWar2"
+
+                               GridPane.columnSpan="2"
+                               GridPane.rowIndex="0"/>
+
+                        <ImageView GridPane.columnSpan="2"
+                                   GridPane.rowIndex="1"
+                                   fitWidth="300"
+                                   preserveRatio="true"
+                                   fx:id="sekiroImage"/>
+
+                        <Label text="Desarrollador" GridPane.rowIndex="2" GridPane.columnIndex="0"/>
+
+                        <Label text="Santa Monica Studio" GridPane.rowIndex="2" GridPane.columnIndex="1"/>
+
+                        <Label text="Distribuidor" GridPane.rowIndex="3" GridPane.columnIndex="0"/>
+                        <Label text="Sony Interactive Entertainment"/>
+
+                        <Label fx:id="desarrolladorGodWar" GridPane.rowIndex="2" GridPane.columnIndex="1"/>
+
+                        <Label text="Distribuidor" GridPane.rowIndex="3" GridPane.columnIndex="0"/>
+                        <Label fx:id="distribuidorGodWar"
+
+                               wrapText="true"
+                               GridPane.rowIndex="3" GridPane.columnIndex="1"/>
+
+                        <Label text="Diseñador" GridPane.rowIndex="4" GridPane.columnIndex="0"/>
+
+                        <Label text="Rafael Grassetti" GridPane.rowIndex="4" GridPane.columnIndex="1"/>
+
+                        <Label text="Plataformas" GridPane.rowIndex="5" GridPane.columnIndex="0"/>
+                        <Label text="PlayStation 4, Playstation 5 y Microsoft Windows"/>
+
+                        <Label fx:id="diseniadorGodWar" GridPane.rowIndex="4" GridPane.columnIndex="1"/>
+
+                        <Label text="Plataformas" GridPane.rowIndex="5" GridPane.columnIndex="0"/>
+                        <Label fx:id="plataformaGodWar"
+
+                               wrapText="true"
+                               GridPane.rowIndex="5" GridPane.columnIndex="1"/>
+
+                        <Label text="Género" GridPane.rowIndex="6" GridPane.columnIndex="0"/>
+
+                        <Label text="Acción, Aventura, Hack adn Slash"/>
+
+                        <Label fx:id="generoGodWar"
+
+                               wrapText="true"
+                               GridPane.rowIndex="6" GridPane.columnIndex="1"/>
+
+                        <Label text="Modos de juego" GridPane.rowIndex="7" GridPane.columnIndex="0"/>
+                        <Label fx:id="modoGodWar" GridPane.rowIndex="7" GridPane.columnIndex="1"/>
+
+                    </GridPane>
+
+
+                    <!--personaje-->
+                    <VBox spacing="20">
+                        <Label text="Personaje"/>
+
+                        <!--Kratos-->
+                        <HBox spacing="20" alignment="TOP_LEFT">
+
+
+                            <Label text="Kratos"/>
+
+                            <Label text="GodWar"/>
+
+
+                            <ImageView fx:id="sekiro_personaje" fitWidth="180" fitHeight="220"/>
+
+                            <VBox alignment="TOP_LEFT">
+
+
+                                <Text wrappingWidth="300" text="El jugador controla al personaje Kratos en elementos de juego de rompecabezas y combate basados en combo. Las armas principales de Kratos son un hacha de batalla mágica llamada Hacha Leviatán, y sus espadas de doble cadena, las Espadas del Caos. También tiene un escudo, cuya versión original se llama Escudo del Guardián. Kratos también utiliza el combate cuerpo a cuerpo. El Hacha Leviatán está imbuida de magia elemental de hielo. Puede arrojarse a los enemigos y volver a invocarse mágicamente en su mano, de forma similar al martillo Mjölnir de Thor. El arma también se puede arrojar a objetos ambientales para desencadenar una explosión dañina y congelar objetos y algunos enemigos en su lugar para resolver acertijos hasta que se vuelva a llamar.
+                                &#10;&#10;Cada arma tiene ataques ligeros y pesados estándar. Se pueden actualizar con runas para permitir ataques rúnicos mágicos, con ranuras para ataques mágicos ligeros y pesados, proporcionando a los jugadores una variedad de opciones para su propio estilo de juego. El botón triangular del controlador también se cambió para Ragnarök. En el juego anterior, el botón se usó para devolver el hacha de Kratos a su mano, pero si ya tenía el hacha, no pasaba nada. Ahora, el botón le permite al jugador usar para desatar un poderoso ataque elemental dependiendo del arma equipada. Si está en una repisa más alta, el jugador puede saltar para realizar un poderoso ataque con armas a los enemigos que se encuentran debajo.
+                                &#10;&#10;Al igual que en el juego anterior, el hijo de Kratos, Atreus, brinda asistencia a través de la inteligencia artificial, ayudando en el combate, el recorrido, la exploración y la resolución de acertijos. El jugador puede controlar pasivamente a Atreus al dictar dónde dispara sus flechas con su arco, ya sea en combate o para resolver acertijos, así como qué animales espectrales mágicos puede convocar para ayudarlo en el combate."/>
+
+                                <Text fx:id="descripcionP1" wrappingWidth="300"/>
+
+
+                            </VBox>
+
+                        </HBox>
+
+
+                        <!--Atreus-->
+                        <HBox spacing="20" alignment="TOP_LEFT">
+                            <Label text="Atreus"/>
+
+                            <ImageView fitWidth="180" fitHeight="220"/>
+
+                            <VBox alignment="TOP_LEFT">
+
+                                <Text wrappingWidth="300"
+                                      text="Atreus es el hijo que Kratos tuvo con una mujer llamada Faye cuando éste emigró a tierras nórdicas. Atreus fue criado por Faye, quien le enseñó a cazar y todo lo que una madre podría enseñarle a su hijo, Kratos sin embargo, se mantenía distante de su propio hijo para ocultarle su verdadera naturaleza: semidiós."/>
+
+                            </VBox>
+
+                        </HBox>
+
+
+
+                    </VBox>
+
+                    <!--tablePremios-->
+
+                    <VBox spacing="10">
+
+                        <Label text="Premios"/>
+
+                        <GridPane fx:id="gridPremios" hgap="10" vgap="5">
+
+                            <columnConstraints>
+                                <ColumnConstraints percentWidth="15"/>
+                                <ColumnConstraints percentWidth="35"/>
+                                <ColumnConstraints percentWidth="35"/>
+                                <ColumnConstraints percentWidth="15"/>
+                            </columnConstraints>
+
+                            <Label text="Año" GridPane.rowIndex="0" GridPane.columnIndex="0"/>
+                            <Label text="Premios" GridPane.rowIndex="0" GridPane.columnIndex="1"/>
+                            <Label text="Categoría" GridPane.rowIndex="0" GridPane.columnIndex="2"/>
+                            <Label text="Resultado" GridPane.rowIndex="0" GridPane.columnIndex="3"/>
+
+                        </GridPane>
+
+                    </VBox>
+
+                </VBox>
+
+            </content>
+
+        </ScrollPane>
+
+    </center>
+
+    <bottom>
+        <HBox alignment="CENTER">
+
+            <Label text="© 2026 Arcadepedia. Todos los derechos reservados."/>
+
+        </HBox>
+    </bottom>
+
+</BorderPane>

@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.text.Text?>
+<?import javafx.geometry.Insets?>
+
+<BorderPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            stylesheets="/styles/info.css"
+            fx:controller="proyecto.code.controller.Info_Sekiro_Controller"
+            prefHeight="400.0" prefWidth="600.0">
+
+    <top>
+        <!--header-->
+        <HBox alignment="CENTER_LEFT" spacing="20">
+
+            <ImageView fx:id="logoHeader" id="logoHeader" fitWidth="170" preserveRatio="true"/>
+
+            <Label text="LA WIKI RETRO DE LOS VIDEOJUEGOS"/>
+
+            <Button fx:id="btnInicio" text="Inicio" onAction="#irInicio"/>
+
+        </HBox>
+
+    </top>
+
+    <!--main-->
+    <center>
+
+        <ScrollPane fitToWidth="true">
+
+            <content>
+
+                <VBox spacing="20">
+
+                    <padding>
+                        <Insets top="20" bottom="20" left="40" right="40"/>
+                    </padding>
+
+                    <!--introduccion-->
+                    <VBox alignment="CENTER_LEFT">
+                        <Label text="Sekiro: Shadows Die Twice"/>
+
+                        <Text fx:id="descripcionSekiro" wrappingWidth="300"/>
+
+                    </VBox>
+
+                    <!--table-->
+                    <GridPane hgap="10" vgap="10">
+
+                        <columnConstraints>
+                            <ColumnConstraints percentWidth="30"/>
+                            <ColumnConstraints percentWidth="70"/>
+                        </columnConstraints>
+
+                        <Label text="Sekiro: Shadows Die Twice"
+                               GridPane.columnSpan="2"
+                               GridPane.rowIndex="0"/>
+
+                        <ImageView GridPane.columnSpan="2"
+                                   GridPane.rowIndex="1"
+                                   fitWidth="300"
+                                   preserveRatio="true"
+                                   fx:id="sekiroImage"/>
+
+                        <Label text="Desarrollador" GridPane.rowIndex="2" GridPane.columnIndex="0"/>
+                        <Label fx:id="desarrolladorSekiro" GridPane.rowIndex="2" GridPane.columnIndex="1"/>
+
+                        <Label text="Distribuidor" GridPane.rowIndex="3" GridPane.columnIndex="0"/>
+                        <Label fx:id="distribuidorSekiro"
+                               wrapText="true"
+                               GridPane.rowIndex="3" GridPane.columnIndex="1"/>
+
+                        <Label text="Diseñador" GridPane.rowIndex="4" GridPane.columnIndex="0"/>
+                        <Label fx:id="diseniadorSekiro"
+                               wrapText="true"
+                               GridPane.rowIndex="4" GridPane.columnIndex="1"/>
+
+                        <Label text="Plataformas" GridPane.rowIndex="5" GridPane.columnIndex="0"/>
+                        <Label fx:id="plataformaSekiro"
+                               wrapText="true"
+                               GridPane.rowIndex="5" GridPane.columnIndex="1"/>
+
+                        <Label text="Género" GridPane.rowIndex="6" GridPane.columnIndex="0"/>
+                        <Label fx:id="generoSekiro"
+                               wrapText="true"
+                               GridPane.rowIndex="6" GridPane.columnIndex="1"/>
+
+                        <Label text="Modos de juego" GridPane.rowIndex="7" GridPane.columnIndex="0"/>
+                        <Label fx:id="modoSekiro" GridPane.rowIndex="7" GridPane.columnIndex="1"/>
+
+                    </GridPane>
+
+
+                    <!--personaje-->
+                    <VBox spacing="20">
+                        <Label text="Personaje"/>
+
+                        <!--sekiro-->
+                        <HBox spacing="20" alignment="TOP_LEFT">
+
+                            <Label text="Sekiro"/>
+
+                            <ImageView fx:id="sekiro_personaje" fitWidth="180" fitHeight="220"/>
+
+                            <VBox alignment="TOP_LEFT">
+
+                                <Text fx:id="descripcionP1" wrappingWidth="300"/>
+
+                            </VBox>
+
+                        </HBox>
+
+                    </VBox>
+
+                    <!--tablePremios-->
+
+                    <VBox spacing="10">
+
+                        <Label text="Premios"/>
+
+                        <GridPane fx:id="gridPremios" hgap="10" vgap="5">
+
+                            <columnConstraints>
+                                <ColumnConstraints percentWidth="15"/>
+                                <ColumnConstraints percentWidth="35"/>
+                                <ColumnConstraints percentWidth="35"/>
+                                <ColumnConstraints percentWidth="15"/>
+                            </columnConstraints>
+
+                            <Label text="Año" GridPane.rowIndex="0" GridPane.columnIndex="0"/>
+                            <Label text="Premios" GridPane.rowIndex="0" GridPane.columnIndex="1"/>
+                            <Label text="Categoría" GridPane.rowIndex="0" GridPane.columnIndex="2"/>
+                            <Label text="Resultado" GridPane.rowIndex="0" GridPane.columnIndex="3"/>
+
+                        </GridPane>
+
+                    </VBox>
+
+                </VBox>
+
+            </content>
+
+        </ScrollPane>
+
+    </center>
+
+    <bottom>
+        <HBox alignment="CENTER">
+
+            <Label text="© 2026 Arcadepedia. Todos los derechos reservados."/>
+
+        </HBox>
+    </bottom>
+
+</BorderPane>

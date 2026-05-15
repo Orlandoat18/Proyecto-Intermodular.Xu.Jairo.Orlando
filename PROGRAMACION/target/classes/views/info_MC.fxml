@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.scene.image.ImageView?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            stylesheets="/styles/info.css"
+            fx:controller="proyecto.code.controller.Info_MC_Controller"
+            prefHeight="400.0" prefWidth="600.0">
+
+    <top>
+        <!--header-->
+        <HBox alignment="CENTER_LEFT" spacing="20">
+
+            <ImageView fx:id="logoHeader" id="logoHeader" fitWidth="170" preserveRatio="true"/>
+
+            <Label text="LA WIKI RETRO DE LOS VIDEOJUEGOS"/>
+
+            <Button fx:id="btnInicio" text="Inicio" onAction="#irInicio"/>
+
+        </HBox>
+
+    </top>
+
+    <!--main-->
+    <center>
+
+        <ScrollPane fitToWidth="true">
+
+            <content>
+
+                <VBox spacing="20">
+
+                    <padding>
+                        <Insets top="20" bottom="20" left="40" right="40"/>
+                    </padding>
+
+                    <!--introduccion-->
+                    <VBox alignment="CENTER_LEFT">
+                        <Label text="Minecraft"/>
+
+
+                        <Text wrappingWidth="300" text="Minecraft es un videojuego de construcción de tipo «mundo abierto» o en inglés sandbox creado originalmente por el sueco Markus Persson (conocido comúnmente como «Notch»), que creó posteriormente Mojang Studios (actualmente parte de Microsoft).
+                        &#10;&#10;Está programado en el lenguaje de programación Java para la versión Java Edition y posteriormente desarrollado en C++ para la versión de Bedrock Edition. Minecraft es un juego de mundo abierto, y no tiene un fin claramente definido (aunque sí que tiene una dimensión llamada a sí misma 'The End', o en español 'El Final' en donde después de entrar y matar a la dragona aparecen los créditos del juego y un poema)."/>
+
+                        <Text fx:id="descripcionMC" wrappingWidth="300"/>
+
+
+                    </VBox>
+
+                    <!--table-->
+                    <GridPane hgap="10" vgap="10">
+
+                        <columnConstraints>
+                            <ColumnConstraints percentWidth="30"/>
+                            <ColumnConstraints percentWidth="70"/>
+                        </columnConstraints>
+
+
+                        <Label text="Minecraft"
+                               styleClass="title_table"
+
+                        <Label fx:id="tituloMC2"
+
+                               GridPane.columnSpan="2"
+                               GridPane.rowIndex="0"/>
+
+                        <ImageView GridPane.columnSpan="2"
+                                   GridPane.rowIndex="1"
+                                   fitWidth="300"
+                                   preserveRatio="true"
+                                   fx:id="sekiroImage"/>
+
+                        <Label text="Desarrollador" GridPane.rowIndex="2" GridPane.columnIndex="0"/>
+
+                        <Label text="Mojang Studios" GridPane.rowIndex="2" GridPane.columnIndex="1"/>
+
+                        <Label text="Distribuidor" GridPane.rowIndex="3" GridPane.columnIndex="0"/>
+                        <Label text="Mojang, Xbox Game Studios y Sony Computer Entertainment"
+
+                        <Label fx:id="desarrolladorMC" GridPane.rowIndex="2" GridPane.columnIndex="1"/>
+
+                        <Label text="Distribuidor" GridPane.rowIndex="3" GridPane.columnIndex="0"/>
+                        <Label fx:id="distribuidorMC"
+
+                               wrapText="true"
+                               GridPane.rowIndex="3" GridPane.columnIndex="1"/>
+
+                        <Label text="Diseñador" GridPane.rowIndex="4" GridPane.columnIndex="0"/>
+
+                        <Label text="Kristofer Zetterstrand" GridPane.rowIndex="4" GridPane.columnIndex="1"/>
+
+                        <Label text="Plataformas" GridPane.rowIndex="5" GridPane.columnIndex="0"/>
+                        <Label text="Windows, macOS, Linux, Android, iOS, iPadOS, Xbox 360, Xbox One, Xbox Series X/S, Playstation 3, Playstation 4, Playstation 5, Playstation Vita, Raspberry Pi, Wii U, Nintendo Switch, New Nintendo 3DS, Windows Phone, Fire OS, tvOS, Apple TV"
+
+                        <Label fx:id="diseniadorMC" GridPane.rowIndex="4" GridPane.columnIndex="1"/>
+
+                        <Label text="Plataformas" GridPane.rowIndex="5" GridPane.columnIndex="0"/>
+                        <Label fx:id="plataformaMC"
+
+                               wrapText="true"
+                               GridPane.rowIndex="5" GridPane.columnIndex="1"/>
+
+                        <Label text="Género" GridPane.rowIndex="6" GridPane.columnIndex="0"/>
+
+                        <Label text="Mundo abierto, Supervivencia"
+
+                        <Label fx:id="generoMC"
+
+                               wrapText="true"
+                               GridPane.rowIndex="6" GridPane.columnIndex="1"/>
+
+                        <Label text="Modos de juego" GridPane.rowIndex="7" GridPane.columnIndex="0"/>
+
+                        <Label text="Un jugador y Multijugador" GridPane.rowIndex="7" GridPane.columnIndex="1"/>
+
+                        <Label fx:id="modoMC" GridPane.rowIndex="7" GridPane.columnIndex="1"/>
+
+
+                    </GridPane>
+
+
+                    <!--personaje-->
+                    <VBox spacing="20">
+                        <Label text="Personaje"/>
+
+                        <!--Steve-->
+                        <HBox spacing="20" alignment="TOP_LEFT">
+
+
+                            <Label text="Steve"/>
+
+                            <Label text="Minecraft"/>
+
+
+                            <ImageView fx:id="sekiro_personaje" fitWidth="180" fitHeight="220"/>
+
+                            <VBox alignment="TOP_LEFT">
+
+
+                                <Text wrappingWidth="300" text="Steve es una de las nueve pieles de personajes de jugador predeterminadas disponibles para jugadores de versiones contemporáneas de Minecraft.
+                                &#10;&#10;Steve carece de una historia de fondo oficial de los desarrolladores de Minecraft, ya que pretende ser un avatar de jugador personalizable y funciona como marcador de posición en lugar de ser un personaje predefinido.
+                                &#10;&#10;Steve se convirtió en un personaje ampliamente reconocido en la industria de los videojuegos tras el éxito comercial y de crítica de la franquicia Minecraft."/>
+
+                            </VBox>
+
+
+                                <Text fx:id="descripcionP1" wrappingWidth="300"/>
+
+                            </VBox>
+
+                        </HBox>
+
+
+                    </VBox>
+
+                    <!--tablePremios-->
+
+                    <VBox spacing="10">
+
+                        <Label text="Premios"/>
+
+                        <GridPane fx:id="gridPremios" hgap="10" vgap="5">
+
+                            <columnConstraints>
+                                <ColumnConstraints percentWidth="15"/>
+                                <ColumnConstraints percentWidth="35"/>
+                                <ColumnConstraints percentWidth="35"/>
+                                <ColumnConstraints percentWidth="15"/>
+                            </columnConstraints>
+
+
+                        <Label text="2011" GridPane.rowIndex="1" GridPane.columnIndex="0" GridPane.rowSpan="7"/>
+
+                        <Label text="Spike Video Game Award" GridPane.rowIndex="1" GridPane.columnIndex="1" GridPane.rowSpan="4"/>
+
+                        <Label text="Mejor juego independiente" GridPane.rowIndex="1" GridPane.columnIndex="2"/>
+                        <Label text="Nominado" GridPane.rowIndex="1" GridPane.columnIndex="3"/>
+
+
+                        <Label text="2012" GridPane.rowIndex="8" GridPane.columnIndex="0" GridPane.rowSpan="6"/>
+
+                        <Label text="Premio Especial BAFTA"
+                               GridPane.rowIndex="8"
+                               GridPane.columnIndex="1"
+                               GridPane.rowSpan="4"/>
+
+                        <Label text="Mejor juego familiar" GridPane.rowIndex="8" GridPane.columnIndex="2"/>
+                        <Label text="Ganador" GridPane.rowIndex="8" GridPane.columnIndex="3"/>
+
+
+                        <Label text="2015" GridPane.rowIndex="14" GridPane.columnIndex="0" GridPane.rowSpan="4"/>
+
+                        <Label text="Premio BAFTA" GridPane.rowIndex="14" GridPane.columnIndex="1"/>
+
+                        <Label text="Mejor juego familiar" GridPane.rowIndex="14" GridPane.columnIndex="2"/>
+                        <Label text="Ganador" GridPane.rowIndex="14" GridPane.columnIndex="3"/>
+
+                        <Label text="British Academy Games Awards"
+                               GridPane.rowIndex="15"
+                               GridPane.columnIndex="1"
+                               GridPane.rowSpan="3"/>
+
+                        <Label text="Mejor juego" GridPane.rowIndex="15" GridPane.columnIndex="2"/>
+                        <Label text="Nominado" GridPane.rowIndex="15" GridPane.columnIndex="3"/>
+
+                        <Label text="Animación" GridPane.rowIndex="16" GridPane.columnIndex="2"/>
+                        <Label text="Nominado" GridPane.rowIndex="16" GridPane.columnIndex="3"/>
+
+                        <Label text="Mejor diseño" GridPane.rowIndex="17" GridPane.columnIndex="2"/>
+                        <Label text="Nominado" GridPane.rowIndex="17" GridPane.columnIndex="3"/>
+
+                    </GridPane>
+
+                            <Label text="Año" GridPane.rowIndex="0" GridPane.columnIndex="0"/>
+                            <Label text="Premios" GridPane.rowIndex="0" GridPane.columnIndex="1"/>
+                            <Label text="Categoría" GridPane.rowIndex="0" GridPane.columnIndex="2"/>
+                            <Label text="Resultado" GridPane.rowIndex="0" GridPane.columnIndex="3"/>
+
+                        </GridPane>
+
+                    </VBox>
+
+
+                </VBox>
+
+            </content>
+
+        </ScrollPane>
+
+    </center>
+
+    <bottom>
+        <HBox alignment="CENTER">
+
+            <Label text="© 2026 Arcadepedia. Todos los derechos reservados."/>
+
+        </HBox>
+    </bottom>
+
+</BorderPane>
