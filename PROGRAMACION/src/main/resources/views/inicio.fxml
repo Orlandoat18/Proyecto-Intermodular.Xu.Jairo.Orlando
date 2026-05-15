@@ -39,7 +39,7 @@
 
                         <Label text="BIENVENIDO A"/>
 
-                        <ImageView fx:id="logoMain" id="logoMain" fitHeight="120" fitWidth="120"/>
+                        <ImageView fx:id="logoMain" id="logoMain" fitHeight="120" preserveRatio="true"/>
 
                         <Label wrapText="true" maxWidth="600"
                                text="La enciclopedia colaborativa dedicada a los videojuegos clásicos. Descubre, aprende y comparte la historia del videojuego retro"/>
@@ -127,5 +127,6 @@
         </ScrollPane>
 
     </center>
+
 </BorderPane>
 
