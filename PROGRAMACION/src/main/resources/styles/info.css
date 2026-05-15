@@ -1,0 +1,164 @@
+.root {
+    -fx-background-color: #000000;
+    -fx-font-family: "Segoe UI", Arial, sans-serif;
+}
+
+.scroll-pane {
+    -fx-background-color: transparent;
+    -fx-background: #000000;
+    -fx-border-color: transparent;
+}
+
+.scroll-pane .viewport {
+    -fx-background-color: transparent;
+}
+
+/*VBox principal*/
+.scroll-pane > .content > .VBox {
+    -fx-background-color: #000000;
+    -fx-alignment: top-center; /* Centrar todo el bloque de la wiki */
+}
+
+.top {
+    -fx-background-color: #050505;
+    -fx-border-color: transparent transparent #1fdb04 transparent;
+    -fx-border-width: 2;
+}
+
+.top .HBox {
+    -fx-padding: 10px 20px;
+    -fx-background-color: #050505;
+}
+
+.top .Label {
+    -fx-text-fill: #ffffff;
+    -fx-font-weight: bold;
+    -fx-font-size: 14px;
+}
+
+.top .Button {
+    -fx-background-color: transparent;
+    -fx-text-fill: #1fdb04;
+    -fx-border-color: #1fdb04;
+    -fx-border-radius: 5;
+    -fx-background-radius: 5;
+    -fx-font-weight: bold;
+    -fx-padding: 5px 15px;
+    -fx-cursor: hand;
+}
+
+.top .Button:hover {
+    -fx-background-color: #1fdb04;
+    -fx-text-fill: #000000;
+}
+
+
+.scroll-pane .VBox .VBox:nth-of-type(1) {
+    -fx-alignment: top-center;
+    -fx-max-width: 800px;
+}
+
+/*Título gigante*/
+.scroll-pane .VBox .VBox:nth-of-type(1) .Label {
+    -fx-text-fill: #ffffff;
+    -fx-font-size: 28px;
+    -fx-font-weight: bold;
+    -fx-padding: 0 0 20 0;
+}
+
+/*Texto de la descripción larga*/
+#descripcionSekiro, #descripcionP1 {
+    -fx-fill: #dcdcdc; /* Color de la fuente en Text */
+    -fx-font-size: 14px;
+    -fx-text-alignment: justify;
+}
+
+#descripcionSekiro {
+    -fx-wrapping-width: 800px;
+}
+
+/* ==========================================================================
+   4. LA FICHA TÉCNICA (GRIDPANE ESTILO WIKI)
+   ========================================================================== */
+.scroll-pane .VBox .GridPane {
+    -fx-background-color: #161616; /* Gris oscuro idéntico a la imagen */
+    -fx-max-width: 800px;
+    -fx-padding: 0;
+    -fx-alignment: top-center;
+}
+
+.scroll-pane .VBox .GridPane .Label:nth-of-type(1) {
+    -fx-background-color: #b63c2c; /* Rojo teja */
+    -fx-text-fill: #ffffff;
+    -fx-font-weight: bold;
+    -fx-font-size: 15px;
+    -fx-alignment: center;
+    -fx-max-width: Infinity;
+    -fx-padding: 10px 0;
+}
+
+#sekiroImage {
+    -fx-alignment: center;
+    -fx-margin: 15px 0;
+}
+
+/*Etiquetas del lado izquierdo (Desarrollador, Distribuidor...)*/
+.scroll-pane .VBox .GridPane .Label {
+    -fx-text-fill: #ffffff;
+    -fx-font-weight: bold;
+    -fx-font-size: 13px;
+    -fx-padding: 12px;
+}
+
+/*Etiquetas del lado derecho*/
+#desarrolladorSekiro, #distribuidorSekiro, #diseniadorSekiro, #plataformaSekiro, #generoSekiro, #modoSekiro {
+    -fx-text-fill: #b5b5b5; /* Gris claro */
+    -fx-font-weight: normal;
+    -fx-font-size: 13px;
+    -fx-padding: 12px;
+}
+
+
+/*Títulos de sección ("Personaje" y "Premios")*/
+.scroll-pane .VBox .VBox .Label:nth-of-type(1) {
+    -fx-text-fill: #1fdb04; /* Título en verde neón */
+    -fx-font-size: 20px;
+    -fx-font-weight: bold;
+    -fx-padding: 20px 0 10px 0;
+}
+
+/*Nombre del personaje*/
+.scroll-pane .VBox .VBox .HBox .Label {
+    -fx-text-fill: #ffffff;
+    -fx-font-size: 16px;
+    -fx-font-weight: bold;
+}
+
+/*Tabla inferior de Premios*/
+#gridPremios {
+    -fx-background-color: #111111;
+    -fx-max-width: 800px;
+    -fx-padding: 10px;
+    -fx-border-color: #222222;
+    -fx-border-radius: 5;
+}
+
+/*Encabezados de la tabla premios*/
+#gridPremios .Label {
+    -fx-text-fill: #1fdb04;
+    -fx-font-size: 13px;
+    -fx-font-weight: bold;
+}
+
+.bottom {
+    -fx-background-color: #000000;
+}
+
+.bottom .HBox {
+    -fx-padding: 20px;
+}
+
+.bottom .Label {
+    -fx-text-fill: #555555;
+    -fx-font-size: 11px;
+}
