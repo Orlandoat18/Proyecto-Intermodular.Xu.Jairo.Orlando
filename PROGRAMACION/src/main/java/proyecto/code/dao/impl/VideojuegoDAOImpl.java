@@ -87,7 +87,7 @@ public class VideojuegoDAOImpl{
     }
 
     public String getDiseniador(Connection DatabaseConfig, int idVideojuego) {
-        String consulta ="SELECT Nombre_Diseñador FROM Diseñador d INNER JOIN Videojuego_Diseñador vd ON d.Id_Distribuidor = vd.Id_Distribuidor WHERE vd.Id_Videojuego = ?";
+        String consulta ="SELECT Nombre_Diseñador FROM Diseñador d INNER JOIN Videojuego_Diseñador vd ON d.Id_Diseñador = vd.Id_Diseñador WHERE vd.Id_Videojuego = ?";
 
         try (PreparedStatement stmt = DatabaseConfig.prepareStatement(consulta)){
 

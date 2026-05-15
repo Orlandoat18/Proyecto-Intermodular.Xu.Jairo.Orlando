@@ -183,3 +183,173 @@ VALUES ('Ari','Gibson','1984-01-01','Australiana');
 INSERT INTO Diseñador (Nombre_Diseñador, Apellido_Diseñador, Fecha_nacimiento, Nacionalidad)
 VALUES ('Alexandre','Tan','1980-01-01','Francesa');
 
+--INSERT DE Plataforma
+
+INSERT INTO Plataforma (Nombre_Plataforma, Fabricante, Descripcion_P)
+VALUES ('PlayStation 4', 'Sony', 'Consola de sobremesa de Sony de octava generación.');
+
+INSERT INTO Plataforma (Nombre_Plataforma, Fabricante, Descripcion_P)
+VALUES ('Xbox One', 'Microsoft', 'Consola de sobremesa de Microsoft de octava generación.');
+
+INSERT INTO Plataforma (Nombre_Plataforma, Fabricante, Descripcion_P)
+VALUES ('Microsoft Windows', 'Microsoft', 'Sistema operativo de PC más usado en el mundo.');
+
+INSERT INTO Plataforma (Nombre_Plataforma, Fabricante, Descripcion_P)
+VALUES ('Nintendo Switch', 'Nintendo', 'Consola híbrida portátil y de sobremesa de Nintendo.');
+
+INSERT INTO Plataforma (Nombre_Plataforma, Fabricante, Descripcion_P)
+VALUES ('Dispositivos Móviles', 'Varios', 'Plataforma móvil Android e iOS.');
+
+--INSERT DE Videojuego_Distribuidor
+
+INSERT INTO Videojuego_Distribuidor (Id_Videojuego, Id_Distribuidor)
+VALUES (1, 1);
+
+INSERT INTO Videojuego_Distribuidor (Id_Videojuego, Id_Distribuidor)
+VALUES (2, 2);
+
+INSERT INTO Videojuego_Distribuidor (Id_Videojuego, Id_Distribuidor)
+VALUES (3, 3);
+
+INSERT INTO Videojuego_Distribuidor (Id_Videojuego, Id_Distribuidor)
+VALUES (4, 4);
+
+INSERT INTO Videojuego_Distribuidor (Id_Videojuego, Id_Distribuidor)
+VALUES (5, 5);
+
+--INSERT DE Videojuego_Diseñador
+
+INSERT INTO Videojuego_Diseñador (Id_Videojuego, Id_Diseñador)
+VALUES (1, 1);
+
+INSERT INTO Videojuego_Diseñador (Id_Videojuego, Id_Diseñador)
+VALUES (2, 2);
+
+INSERT INTO Videojuego_Diseñador (Id_Videojuego, Id_Diseñador)
+VALUES (3, 3);
+
+INSERT INTO Videojuego_Diseñador (Id_Videojuego, Id_Diseñador)
+VALUES (4, 4);
+
+INSERT INTO Videojuego_Diseñador (Id_Videojuego, Id_Diseñador)
+VALUES (5, 5);
+
+
+--INSERT DE Videojuego_Plataforma
+
+INSERT INTO Videojuego_Plataforma (Id_Videojuego, Id_Plataforma)
+VALUES (1, 1);
+
+INSERT INTO Videojuego_Plataforma (Id_Videojuego, Id_Plataforma)
+VALUES (1, 2);
+
+INSERT INTO Videojuego_Plataforma (Id_Videojuego, Id_Plataforma)
+VALUES (1, 3);
+
+INSERT INTO Videojuego_Plataforma (Id_Videojuego, Id_Plataforma)
+VALUES (2, 3);
+
+INSERT INTO Videojuego_Plataforma (Id_Videojuego, Id_Plataforma)
+VALUES (2, 2);
+
+INSERT INTO Videojuego_Plataforma (Id_Videojuego, Id_Plataforma)
+VALUES (2, 5);
+
+INSERT INTO Videojuego_Plataforma (Id_Videojuego, Id_Plataforma)
+VALUES (3, 1);
+
+INSERT INTO Videojuego_Plataforma (Id_Videojuego, Id_Plataforma)
+VALUES (4, 3);
+
+INSERT INTO Videojuego_Plataforma (Id_Videojuego, Id_Plataforma)
+VALUES (4, 4);
+
+INSERT INTO Videojuego_Plataforma (Id_Videojuego, Id_Plataforma)
+VALUES (4, 1);
+
+INSERT INTO Videojuego_Plataforma (Id_Videojuego, Id_Plataforma)
+VALUES (5, 3);
+
+INSERT INTO Videojuego_Plataforma (Id_Videojuego, Id_Plataforma)
+VALUES (5, 2);
+
+INSERT INTO Videojuego_Plataforma (Id_Videojuego, Id_Plataforma)
+VALUES (5, 1);
+
+INSERT INTO Videojuego_Plataforma (Id_Videojuego, Id_Plataforma)
+VALUES (5, 4);
+
+INSERT INTO Videojuego_Plataforma (Id_Videojuego, Id_Plataforma)
+VALUES (5, 5);
+
+-- Videojuego_Genero
+
+INSERT INTO Videojuego_Genero (Id_Videojuego, Id_Genero)
+VALUES (1, 1);
+
+INSERT INTO Videojuego_Genero (Id_Videojuego, Id_Genero)
+VALUES (1, 2);
+
+INSERT INTO Videojuego_Genero (Id_Videojuego, Id_Genero)
+VALUES (2, 2);
+
+INSERT INTO Videojuego_Genero (Id_Videojuego, Id_Genero)
+VALUES (2, 3);
+
+INSERT INTO Videojuego_Genero (Id_Videojuego, Id_Genero)
+VALUES (3, 1);
+
+INSERT INTO Videojuego_Genero (Id_Videojuego, Id_Genero)
+VALUES (3, 2);
+
+INSERT INTO Videojuego_Genero (Id_Videojuego, Id_Genero)
+VALUES (4, 1);
+
+INSERT INTO Videojuego_Genero (Id_Videojuego, Id_Genero)
+VALUES (4, 2);
+
+INSERT INTO Videojuego_Genero (Id_Videojuego, Id_Genero)
+VALUES (5, 1);
+
+-- Videojuego_ModoDeJuego
+
+INSERT INTO Videojuego_ModoDeJuego (Id_Videojuego, Id_ModoJuego)
+VALUES (1, 1);
+
+INSERT INTO Videojuego_ModoDeJuego (Id_Videojuego, Id_ModoJuego)
+VALUES (2, 1);
+
+INSERT INTO Videojuego_ModoDeJuego (Id_Videojuego, Id_ModoJuego)
+VALUES (2, 2);
+
+INSERT INTO Videojuego_ModoDeJuego (Id_Videojuego, Id_ModoJuego)
+VALUES (2, 4);
+
+INSERT INTO Videojuego_ModoDeJuego (Id_Videojuego, Id_ModoJuego)
+VALUES (3, 1);
+
+INSERT INTO Videojuego_ModoDeJuego (Id_Videojuego, Id_ModoJuego)
+VALUES (4, 1);
+
+INSERT INTO Videojuego_ModoDeJuego (Id_Videojuego, Id_ModoJuego)
+VALUES (5, 2);
+
+INSERT INTO Videojuego_ModoDeJuego (Id_Videojuego, Id_ModoJuego)
+VALUES (5, 5);
+
+-- Videojuego_Premio
+
+INSERT INTO Videojuego_Premio (Id_Videojuego, Id_Premio)
+VALUES (1, 1);
+
+INSERT INTO Videojuego_Premio (Id_Videojuego, Id_Premio)
+VALUES (1, 2);
+
+INSERT INTO Videojuego_Premio (Id_Videojuego, Id_Premio)
+VALUES (3, 3);
+
+INSERT INTO Videojuego_Premio (Id_Videojuego, Id_Premio)
+VALUES (3, 4);
+
+INSERT INTO Videojuego_Premio (Id_Videojuego, Id_Premio)
+VALUES (4, 5);
