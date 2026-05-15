@@ -61,6 +61,10 @@ public class Info_Godwar_Controller {
 
             info_Godwar_Service.cargarImagen(gwImage, "/img/Godofwar.jpg");
 
+            info_Godwar_Service.cargarImagen(kratos_personaje, "/img/Krato.jpg");
+
+            cargarDatos();
+
         }catch (cargaException e){
             System.out.println("Error general en carga de recursos");
             System.out.println(e.getMessage());
