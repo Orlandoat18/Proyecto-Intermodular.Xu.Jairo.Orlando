@@ -1,0 +1,129 @@
+.root {
+    -fx-background-color: #000000; /* Fondo negro para toda la app */
+    -fx-font-family: "Segoe UI", Arial, sans-serif;
+}
+
+/*Forzar que el ScrollPane sea oscuro y no tenga bordes*/
+.scroll-pane {
+    -fx-background-color: transparent;
+    -fx-background: #000000;
+    -fx-border-color: transparent;
+}
+
+.scroll-pane .viewport {
+    -fx-background-color: transparent;
+}
+
+/*Contenedor VBox dentro del ScrollPane*/
+.scroll-pane > .content > .VBox {
+    -fx-background-color: #000000;
+    -fx-padding: 30px;
+}
+
+.top {
+    -fx-background-color: #050505;
+    -fx-border-color: transparent transparent #1fdb04 transparent; /* Línea verde abajo */
+    -fx-border-width: 2;
+}
+
+.top .HBox {
+    -fx-padding: 10px 20px;
+    -fx-background-color: #050505;
+}
+
+/*Texto del Header*/
+.top .Label {
+    -fx-text-fill: #ffffff;
+    -fx-font-weight: bold;
+    -fx-font-size: 14px;
+    -fx-letter-spacing: 1px;
+}
+
+/*Botón de Inicio en el Header*/
+.top .Button {
+    -fx-background-color: transparent;
+    -fx-text-fill: #1fdb04;
+    -fx-border-color: #1fdb04;
+    -fx-border-radius: 5;
+    -fx-background-radius: 5;
+    -fx-font-weight: bold;
+    -fx-padding: 5px 15px;
+    -fx-cursor: hand;
+}
+
+.top .Button:hover {
+    -fx-background-color: #1fdb04;
+    -fx-text-fill: #000000;
+}
+
+
+/*Texto "BIENVENIDO A"*/
+.scroll-pane .VBox .VBox .Label:nth-of-type(1) {
+    -fx-text-fill: #1fdb04;
+    -fx-font-weight: bold;
+    -fx-font-size: 14px;
+}
+
+/*Texto largo de la descripción*/
+.scroll-pane .VBox .VBox .Label:nth-of-type(2) {
+    -fx-text-fill: #ffffff;
+    -fx-font-size: 15px;
+    -fx-font-weight: bold;
+    -fx-text-alignment: center;
+    -fx-line-spacing: 5px;
+}
+
+/*"EXPLORAR JUEGOS CLÁSICOS"*/
+.scroll-pane > .content > .VBox > .Label {
+    -fx-text-fill: #ffffff;
+    -fx-font-size: 20px;
+    -fx-font-weight: bold;
+    -fx-padding: 20px 0 10px 0;
+}
+
+
+/*Tarjeta base*/
+#tarjeta, #tarjeta_Sekiro {
+    -fx-background-color: #0a0a0a;
+    -fx-padding: 10px;
+    -fx-background-radius: 8;
+    -fx-border-radius: 8;
+    -fx-border-color: #111111;
+    -fx-border-width: 1;
+    -fx-cursor: hand;
+    /* Efecto de brillo verde sutil abajo */
+    -fx-effect: dropshadow(two-pass-box, rgba(31, 219, 4, 0.15), 10, 0.0, 0, 4);
+}
+
+/*Efecto Hover al pasar el ratón por encima de la tarjeta*/
+#tarjeta:hover, #tarjeta_Sekiro:hover {
+    -fx-background-color: #121212;
+    -fx-border-color: #1fdb04; /* El borde se vuelve verde brillante */
+    -fx-effect: dropshadow(two-pass-box, rgba(31, 219, 4, 0.4), 15, 0.0, 0, 0);
+}
+
+/*Redondear las esquinas de las portadas de los juegos*/
+#tarjeta .ImageView, #tarjeta_Sekiro .ImageView {
+    -fx-background-radius: 5;
+}
+
+/*Título del juego*/
+#tarjeta .Label:nth-of-type(1), #tarjeta_Sekiro .Label:nth-of-type(1) {
+    -fx-text-fill: #ffffff;
+    -fx-font-weight: bold;
+    -fx-font-size: 13px;
+    -fx-wrap-text: true;
+    -fx-text-alignment: center;
+}
+
+/*Año del juego*/
+#tarjeta .Label:nth-of-type(2), #tarjeta_Sekiro .Label:nth-of-type(2) {
+    -fx-text-fill: #666666;
+    -fx-font-size: 11px;
+}
+
+/*Género del juego*/
+#tarjeta .Label:nth-of-type(3), #tarjeta_Sekiro .Label:nth-of-type(3) {
+    -fx-text-fill: #1fdb04;
+    -fx-font-size: 11px;
+}
