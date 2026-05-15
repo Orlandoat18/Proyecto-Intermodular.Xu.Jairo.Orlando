@@ -63,6 +63,8 @@ public class Info_Sekiro_Controller {
 
     @FXML
     private void initialize() {
+        info_Sekiro_Service = new Info_Sekiro_Service();
+
         try {
             info_Sekiro_Service.cargarImagen(logoHeader, "/img/PAGINA_LOGO.jpg");
 

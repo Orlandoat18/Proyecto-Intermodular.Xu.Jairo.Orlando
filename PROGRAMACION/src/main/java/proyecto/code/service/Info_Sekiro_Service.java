@@ -16,7 +16,7 @@ public class Info_Sekiro_Service {
 
     private static VideojuegoDAOImpl dao;
 
-    public Info_Sekiro_Service(Connection DatabaseConfig) {
+    public Info_Sekiro_Service() {
         this.dao = new VideojuegoDAOImpl();
     }
 
