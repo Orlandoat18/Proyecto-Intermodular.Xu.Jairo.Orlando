@@ -40,6 +40,21 @@ h4 {
     right: 25px;
 }
 
+#btnSalida{
+    background:transparent;
+    border:none;
+    cursor:pointer;
+    position:absolute;
+    top:20px;
+    right:95px;
+}
+
+#btnSalida img{
+    width:55px;
+    height:auto;
+    display:block;
+}
+
 header p {
     position: absolute;
     top: 52px;
