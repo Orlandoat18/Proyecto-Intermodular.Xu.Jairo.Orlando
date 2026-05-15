@@ -73,23 +73,23 @@ public class Info_HK_Controller {
 
         try {
 
-            Videojuego videojuego = Info_MC_Service.getVideojuego("Minecraft");
+            Videojuego videojuego = Info_HK_Service.getVideojuego("Minecraft");
 
             if (videojuego == null) return;
 
             descripcionHK.setText(videojuego.getDescripcion_Videojuego());
 
-            desarrolladorHK.setText(Info_MC_Service.getDesarrollador(videojuego.getId_Desarrollador()));
+            desarrolladorHK.setText(Info_HK_Service.getDesarrollador(videojuego.getId_Desarrollador()));
 
-            distribuidorHK.setText(Info_MC_Service.getDistribuidores(videojuego.getId_Videojuego()));
+            distribuidorHK.setText(Info_HK_Service.getDistribuidores(videojuego.getId_Videojuego()));
 
-            diseniadorHK.setText(Info_MC_Service.getDiseniadores(videojuego.getId_Videojuego()));
+            diseniadorHK.setText(Info_HK_Service.getDiseniadores(videojuego.getId_Videojuego()));
 
-            plataformaHK.setText(Info_MC_Service.getPlataformas(videojuego.getId_Videojuego()));
+            plataformaHK.setText(Info_HK_Service.getPlataformas(videojuego.getId_Videojuego()));
 
-            generoHK.setText(Info_MC_Service.getGeneros(videojuego.getId_Videojuego()));
+            generoHK.setText(Info_HK_Service.getGeneros(videojuego.getId_Videojuego()));
 
-            modoHK.setText(Info_MC_Service.getModos(videojuego.getId_Videojuego()));
+            modoHK.setText(Info_HK_Service.getModos(videojuego.getId_Videojuego()));
 
             descripcionP1.setText("Personaje principal del videojuego Sekiro.");
 
