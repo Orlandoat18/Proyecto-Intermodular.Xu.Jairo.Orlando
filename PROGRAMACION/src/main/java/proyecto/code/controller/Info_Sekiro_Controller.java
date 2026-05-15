@@ -10,10 +10,14 @@ import javafx.scene.image.ImageView;
 import javafx.scene.text.Text;
 import javafx.stage.Stage;
 
+import proyecto.code.config.DatabaseConfig;
 import proyecto.code.exceptions.cargaException;
+import proyecto.code.model.Videojuego;
 import proyecto.code.service.Info_Sekiro_Service;
 
 import java.io.IOException;
+import java.sql.Connection;
+import java.sql.SQLException;
 
 public class Info_Sekiro_Controller {
 
@@ -54,18 +58,8 @@ public class Info_Sekiro_Controller {
     @FXML
     private Text descripcionP1;
 
-    @FXML
-    private ImageView isshin_personaje;
-    @FXML
-    private Text descripcionP2;
 
-    @FXML
-    private ImageView genichiro_personaje;
-    @FXML
-    private Text descripcionP3;
-
-
-    private final Info_Sekiro_Service info_Sekiro_Service = new Info_Sekiro_Service();
+    private Info_Sekiro_Service info_Sekiro_Service;
 
     @FXML
     private void initialize() {
@@ -73,18 +67,42 @@ public class Info_Sekiro_Controller {
             info_Sekiro_Service.cargarImagen(logoHeader, "/img/PAGINA_LOGO.jpg");
 
             info_Sekiro_Service.cargarImagen(sekiroImage, "/img/Sekiro.jpg");
-            
-            info_Sekiro_Service.cargarImagen(sekiro_personaje,"/img/sekiro_personaje/Sekiro_personaje.jpg");
-            
-            info_Sekiro_Service.cargarImagen(isshin_personaje,"/img/sekiro_personaje/Isshin_Personaje.jpg");
-            
-            info_Sekiro_Service.cargarImagen(genichiro_personaje,"/img/sekiro_personaje/Genichiro_Personaje.jpg");
 
-        }catch (cargaException e){
+            info_Sekiro_Service.cargarImagen(sekiro_personaje, "/img/sekiro_personaje/Sekiro_personaje.jpg");
+
+        } catch (cargaException e) {
             System.out.println("Error general en carga de recursos");
             System.out.println(e.getMessage());
         }
     }
+
+    private void cargarDatos() {
+
+        try {
+
+            Videojuego sekiro = Info_Sekiro_Service.getVideojuego("Sekiro: Shadows Die Twice");
+
+            if (sekiro == null) return;
+
+            descripcionSekiro.setText(sekiro.getDescripcion_Videojuego());
+
+            desarrolladorSekiro.setText(Info_Sekiro_Service.getDesarrollador(sekiro.getId_Desarrollador()));
+
+            distribuidorSekiro.setText(Info_Sekiro_Service.getDistribuidores(sekiro.getId_Videojuego()));
+
+            plataformaSekiro.setText(Info_Sekiro_Service.getPlataformas(sekiro.getId_Videojuego()));
+
+            generoSekiro.setText(Info_Sekiro_Service.getGeneros(sekiro.getId_Videojuego()));
+
+            modoSekiro.setText(Info_Sekiro_Service.getModos(sekiro.getId_Videojuego()));
+
+            descripcionP1.setText("Personaje principal del videojuego Sekiro.");
+
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+    }
+
 
     @FXML
     public void irInicio(){

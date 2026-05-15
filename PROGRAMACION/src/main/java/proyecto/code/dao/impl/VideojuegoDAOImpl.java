@@ -69,7 +69,7 @@ public class VideojuegoDAOImpl{
     }
 
     public String getDistribuidor(Connection DatabaseConfig, int idVideojuego) {
-        String consulta ="SELECT Nombre_Distribuidor FROM Distribuidor d INNER JOIN Videojuego_Distribuidor vd ON d.Id_Distribuidor = vd.Id_Distribuidor INNER JOIN Videojuego v ON vd.Id_Videojuego = v.Id_Videojuego WHERE v.Id_Videojuego = ?";
+        String consulta ="SELECT Nombre_Distribuidor FROM Distribuidor d INNER JOIN Videojuego_Distribuidor vd ON d.Id_Distribuidor = vd.Id_Distribuidor WHERE vd.Id_Videojuego = ?";
 
         try (PreparedStatement stmt = DatabaseConfig.prepareStatement(consulta)){
 
@@ -87,7 +87,7 @@ public class VideojuegoDAOImpl{
     }
 
     public String getPlataforma(Connection DatabaseConfig, int idVideojuego) {
-        String consulta ="SELECT Nombre_Plataforma FROM Plataforma p INNER JOIN Videojuego_Plataforma vp ON p.Id_Plataforma = vp.Id_Plataforma INNER JOIN Videojuego v ON vp.Id_Videojuego = v.Id_Videojuego WHERE v.Id_Videojuego = ?";
+        String consulta ="SELECT Nombre_Plataforma FROM Plataforma p INNER JOIN Videojuego_Plataforma vp ON p.Id_Plataforma = vp.Id_Plataforma WHERE vp.Id_Videojuego = ?";
 
         try (PreparedStatement stmt = DatabaseConfig.prepareStatement(consulta)){
 
@@ -105,7 +105,7 @@ public class VideojuegoDAOImpl{
     }
 
     public String getGenero(Connection DatabaseConfig, int idVideojuego) {
-        String consulta ="SELECT Nombre_Genero FROM Genero g INNER JOIN Videojuego_Genero vg ON g.Id_Distribuidor = vg.Id_Distribuidor INNER JOIN Videojuego v ON vg.Id_Videojuego = v.Id_Videojuego WHERE v.Id_Videojuego = ?";
+        String consulta ="SELECT Nombre_Genero FROM Genero g INNER JOIN Videojuego_Genero vg ON g.Id_Genero = vg.Id_Genero WHERE vg.Id_Videojuego = ?";
 
         try (PreparedStatement stmt = DatabaseConfig.prepareStatement(consulta)){
 
@@ -123,7 +123,7 @@ public class VideojuegoDAOImpl{
     }
 
     public String getModo(Connection DatabaseConfig, int idVideojuego) {
-        String consulta ="SELECT Nombre_Modo FROM ModoDeJuego m INNER JOIN Videojuego_ModoDeJuego vm ON m.Id_Distribuidor = vm.Id_Distribuidor INNER JOIN Videojuego v ON vm.Id_Videojuego = v.Id_Videojuego WHERE v.Id_Videojuego = ?";
+        String consulta ="SELECT Nombre_Modo FROM ModoDeJuego m INNER JOIN Videojuego_ModoDeJuego vm ON m.Id_ModoJuego = vm.Id_ModoJuego WHERE vm.Id_Videojuego = ?";
 
         try (PreparedStatement stmt = DatabaseConfig.prepareStatement(consulta)){
 

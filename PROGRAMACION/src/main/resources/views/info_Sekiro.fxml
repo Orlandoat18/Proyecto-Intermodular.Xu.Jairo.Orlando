@@ -112,33 +112,6 @@
 
                         </HBox>
 
-                        <!--Isshin-->
-                        <HBox spacing="20" alignment="TOP_LEFT">
-                            <Text text="Isshin Ashina"/>
-
-                            <ImageView fx:id="isshin_personaje" fitWidth="180" fitHeight="220"/>
-
-                            <VBox alignment="TOP_LEFT">
-
-                                <Text fx:id="descripcionP2" wrappingWidth="300"/>
-
-                            </VBox>
-                        </HBox>
-
-                        <!--Genichiro-->
-                        <HBox spacing="20" alignment="TOP_LEFT">
-                            <Text text="Genichiro Ashina"/>
-
-                            <ImageView fx:id="genichiro_personaje" fitWidth="180" fitHeight="220"/>
-
-                            <VBox alignment="TOP_LEFT">
-
-                                <Text fx:id="descripcionP3" wrappingWidth="300"/>
-
-                            </VBox>
-
-                        </HBox>
-
                     </VBox>
 
                     <!--tablePremios-->
