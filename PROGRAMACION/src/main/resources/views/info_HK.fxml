@@ -8,6 +8,7 @@
 <?import javafx.scene.text.Text?>
 <BorderPane xmlns="http://javafx.com/javafx"
             xmlns:fx="http://javafx.com/fxml"
+            stylesheets="/styles/info.css"
             fx:controller="proyecto.code.controller.Info_HK_Controller"
             prefHeight="400.0" prefWidth="600.0">
 
