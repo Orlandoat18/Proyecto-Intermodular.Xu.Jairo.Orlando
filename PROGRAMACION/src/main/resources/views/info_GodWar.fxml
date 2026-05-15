@@ -19,9 +19,9 @@
 
             <ImageView fx:id="logoHeader" id="logoHeader" fitWidth="170" preserveRatio="true"/>
 
-            <Label text="LA WIKI RETRO DE LOS VIDEOJUEGOS"/>
+            <Label id="tituloescena" text="LA WIKI RETRO DE LOS VIDEOJUEGOS"/>
 
-            <Button fx:id="btnInicio" text="Inicio" onAction="#irInicio"/>
+            <Button fx:id="btnInicio" id="btnEntrar" text="Inicio" onAction="#irInicio"/>
 
         </HBox>
 

@@ -30,13 +30,13 @@
     -fx-background-color: #050505;
 }
 
-.top .Label {
+#tituloescena{
     -fx-text-fill: #ffffff;
     -fx-font-weight: bold;
     -fx-font-size: 14px;
 }
 
-.top .Button {
+#btnEntrar{
     -fx-background-color: transparent;
     -fx-text-fill: #1fdb04;
     -fx-border-color: #1fdb04;
@@ -47,7 +47,7 @@
     -fx-cursor: hand;
 }
 
-.top .Button:hover {
+#btnEntrar:hover {
     -fx-background-color: #1fdb04;
     -fx-text-fill: #000000;
 }

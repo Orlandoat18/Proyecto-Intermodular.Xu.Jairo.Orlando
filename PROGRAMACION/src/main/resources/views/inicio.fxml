@@ -5,6 +5,7 @@
 
 <?import javafx.scene.image.ImageView?>
 
+<?import javafx.geometry.Insets?>
 <BorderPane xmlns="http://javafx.com/javafx"
             xmlns:fx="http://javafx.com/fxml"
             stylesheets="/styles/inicio.css"
@@ -17,9 +18,9 @@
 
             <ImageView fx:id="logoHeader" id="logoHeader" fitWidth="170" preserveRatio="true"/>
 
-            <Label text="LA WIKI RETRO DE LOS VIDEOJUEGOS"/>
+            <Label id="tituloescena" text="LA WIKI RETRO DE LOS VIDEOJUEGOS"/>
 
-            <Button text="Inicio"/>
+            <Button id="btnEntrar" text="Inicio" />
 
         </HBox>
 
@@ -32,6 +33,10 @@
             <content>
 
                 <VBox spacing="20">
+
+                    <padding>
+                        <Insets top="20" bottom="20" left="60" right="60"/>
+                    </padding>
 
                     <VBox alignment="CENTER" spacing="15">
 
