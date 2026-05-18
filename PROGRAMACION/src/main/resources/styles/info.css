@@ -109,7 +109,7 @@
 }
 
 /*Etiquetas del lado derecho*/
-#desarrolladorSekiro, #distribuidorSekiro, #diseniadorSekiro, #plataformaSekiro, #generoSekiro, #modoSekiro {
+#desarrollador, #distribuidor, #diseniador, #plataforma, #genero, #modo {
     -fx-text-fill: #b5b5b5; /* Gris claro */
     -fx-font-weight: normal;
     -fx-font-size: 13px;

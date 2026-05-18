@@ -62,7 +62,7 @@ public class Info_AL_Controller {
 
             info_AL_Service.cargarImagen(alImage, "/img/asphaltlegends.jpg");
 
-            info_AL_Service.cargarImagen(driver_personaje, "/img/personaje/PAGINA_PD.jpg");
+            info_AL_Service.cargarImagen(driver_personaje, "/img/personaje/Blue_Rabbit_Personaje.jpg");
 
             cargarDatos();
 
