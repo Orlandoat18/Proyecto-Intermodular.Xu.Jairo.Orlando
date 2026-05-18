@@ -73,13 +73,11 @@
     -fx-text-alignment: justify;
 }
 
-#descripcionSekiro {
+#descripcion {
     -fx-wrapping-width: 800px;
 }
 
-/* ==========================================================================
-   4. LA FICHA TÉCNICA (GRIDPANE ESTILO WIKI)
-   ========================================================================== */
+
 .scroll-pane .VBox .GridPane {
     -fx-background-color: #161616; /* Gris oscuro idéntico a la imagen */
     -fx-max-width: 800px;

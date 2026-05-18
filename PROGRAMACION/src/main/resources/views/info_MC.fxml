@@ -69,31 +69,37 @@
 
                         <Label text="Desarrollador" GridPane.rowIndex="2" GridPane.columnIndex="0"/>
                         <Label fx:id="desarrolladorMC"
+                               id="desarrollador"
                                wrapText="true"
                                GridPane.rowIndex="2" GridPane.columnIndex="1"/>
 
                         <Label text="Distribuidor" GridPane.rowIndex="3" GridPane.columnIndex="0"/>
                         <Label fx:id="distribuidorMC"
+                               id="distribuidor"
                                wrapText="true"
                                GridPane.rowIndex="3" GridPane.columnIndex="1"/>
 
                         <Label text="Diseñador" GridPane.rowIndex="4" GridPane.columnIndex="0"/>
                         <Label fx:id="diseniadorMC"
+                               id="diseniador"
                                wrapText="true"
                                GridPane.rowIndex="4" GridPane.columnIndex="1"/>
 
                         <Label text="Plataformas" GridPane.rowIndex="5" GridPane.columnIndex="0"/>
                         <Label fx:id="plataformaMC"
+                               id="plataforma"
                                wrapText="true"
                                GridPane.rowIndex="5" GridPane.columnIndex="1"/>
 
                         <Label text="Género" GridPane.rowIndex="6" GridPane.columnIndex="0"/>
                         <Label fx:id="generoMC"
+                               id="genero"
                                wrapText="true"
                                GridPane.rowIndex="6" GridPane.columnIndex="1"/>
 
                         <Label text="Modos de juego" GridPane.rowIndex="7" GridPane.columnIndex="0"/>
                         <Label fx:id="modoMC"
+                               id="modo"
                                wrapText="true"
                                GridPane.rowIndex="7" GridPane.columnIndex="1"/>
                     </GridPane>
