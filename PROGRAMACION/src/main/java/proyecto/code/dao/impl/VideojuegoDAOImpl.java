@@ -34,7 +34,7 @@ public class VideojuegoDAOImpl{
     }
 
     public String obtenerDescrpcionPorTitulo(Connection DatabaseConfig, String titulo) {
-        String consulta ="SELECT Descripcion_Videojuego FROM Videojuego WHERE Titulo = ?";
+        String consulta ="SELECT Descripcion_Personaje FROM Personaje p INNER JOIN Videojuego v ON p.Id_Personaje = v.Id_Personaje WHERE Titulo = ?";
 
         try(PreparedStatement stmt = DatabaseConfig.prepareStatement(consulta)){
 
@@ -42,7 +42,7 @@ public class VideojuegoDAOImpl{
             ResultSet rs = stmt.executeQuery();
 
             if(rs.next()){
-                return rs.getString("Descripcion_Videojuego");
+                return rs.getString("Descripcion_Personaje");
             }
 
         }catch (SQLException e){

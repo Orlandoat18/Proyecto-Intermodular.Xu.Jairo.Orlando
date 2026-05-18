@@ -96,7 +96,7 @@ public class Info_Sekiro_Controller {
 
             modoSekiro.setText(Info_Sekiro_Service.getModos(videojuego.getId_Videojuego()));
 
-            descripcionP1.setText("Personaje principal del videojuego Sekiro.");
+            descripcionP1.setText(Info_Sekiro_Service.getDescripcion_Personaje("Sekiro: Shadows Die Twice"));
 
         } catch (SQLException e) {
             e.printStackTrace();

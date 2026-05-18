@@ -13,6 +13,7 @@ import proyecto.code.exceptions.cargaException;
 import proyecto.code.model.Videojuego;
 import proyecto.code.service.Info_AL_Service;
 import proyecto.code.service.Info_Godwar_Service;
+import proyecto.code.service.Info_Sekiro_Service;
 
 import java.io.IOException;
 import java.sql.SQLException;
@@ -93,7 +94,7 @@ public class Info_AL_Controller {
 
             modoAL.setText(Info_AL_Service.getModos(videojuego.getId_Videojuego()));
 
-            descripcionP1.setText("Personaje principal del videojuego Sekiro.");
+            descripcionP1.setText(Info_Sekiro_Service.getDescripcion_Personaje("Asphalt Legends Unite"));
 
         } catch (SQLException e) {
             e.printStackTrace();

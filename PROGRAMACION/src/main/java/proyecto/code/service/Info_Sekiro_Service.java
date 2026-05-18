@@ -69,4 +69,10 @@ public class Info_Sekiro_Service {
 
         return dao.getModo(connection,idVideojuego);
     }
+
+    public static  String getDescripcion_Personaje(String titulo) throws SQLException {
+        Connection connection = DatabaseConfig.getConnection();
+
+        return dao.obtenerDescrpcionPorTitulo(connection,titulo);
+    }
 }

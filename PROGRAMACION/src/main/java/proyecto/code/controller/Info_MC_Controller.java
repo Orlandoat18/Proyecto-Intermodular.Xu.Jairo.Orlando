@@ -93,7 +93,7 @@ public class Info_MC_Controller {
 
             modoMC.setText(Info_MC_Service.getModos(videojuego.getId_Videojuego()));
 
-            descripcionP1.setText("Personaje principal del videojuego Sekiro.");
+            descripcionP1.setText(Info_Sekiro_Service.getDescripcion_Personaje("Minecraft"));
 
         } catch (SQLException e) {
             e.printStackTrace();

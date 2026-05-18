@@ -13,6 +13,7 @@ import proyecto.code.exceptions.cargaException;
 import proyecto.code.model.Videojuego;
 import proyecto.code.service.Info_HK_Service;
 import proyecto.code.service.Info_MC_Service;
+import proyecto.code.service.Info_Sekiro_Service;
 
 import java.io.IOException;
 import java.sql.SQLException;
@@ -91,7 +92,7 @@ public class Info_HK_Controller {
 
             modoHK.setText(Info_HK_Service.getModos(videojuego.getId_Videojuego()));
 
-            descripcionP1.setText("Personaje principal del videojuego Sekiro.");
+            descripcionP1.setText(Info_Sekiro_Service.getDescripcion_Personaje("Hollow Knight"));
 
         } catch (SQLException e) {
             e.printStackTrace();
