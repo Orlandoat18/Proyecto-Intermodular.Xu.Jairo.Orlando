@@ -44,7 +44,7 @@
                     <VBox alignment="CENTER_LEFT">
                         <Label text="Sekiro: Shadows Die Twice"/>
 
-                        <Text fx:id="descripcionSekiro" wrappingWidth="300"/>
+                        <Text fx:id="descripcionSekiro" id="descripcion" wrappingWidth="300"/>
 
                     </VBox>
 

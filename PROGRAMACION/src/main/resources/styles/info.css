@@ -67,7 +67,7 @@
 }
 
 /*Texto de la descripción larga*/
-#descripcionSekiro, #descripcionP1 {
+#descripcion, #descripcionP1 {
     -fx-fill: #dcdcdc; /* Color de la fuente en Text */
     -fx-font-size: 14px;
     -fx-text-alignment: justify;

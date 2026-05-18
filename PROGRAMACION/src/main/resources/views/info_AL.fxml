@@ -44,7 +44,7 @@
                     <VBox alignment="CENTER_LEFT">
                         <Label text="Asphalt Legends Unite"/>
 
-                        <Text fx:id="descripcionAL" wrappingWidth="300"/>
+                        <Text fx:id="descripcionAL" id="descripcion" wrappingWidth="300"/>
 
                     </VBox>
 

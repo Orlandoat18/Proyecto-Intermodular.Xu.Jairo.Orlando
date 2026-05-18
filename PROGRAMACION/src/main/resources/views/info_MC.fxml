@@ -45,7 +45,7 @@
                     <VBox alignment="CENTER_LEFT">
                         <Label text="Minecraft"/>
 
-                        <Text fx:id="descripcionMC" wrappingWidth="300"/>
+                        <Text fx:id="descripcionMC" id="descripcion" wrappingWidth="300"/>
 
                     </VBox>
 

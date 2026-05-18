@@ -44,7 +44,7 @@
                     <VBox alignment="CENTER_LEFT">
                         <Label text="God of War: Ragnarok"/>
 
-                        <Text fx:id="descripcionGW" wrappingWidth="300"/>
+                        <Text fx:id="descripcionGW" id="descripcion" wrappingWidth="300"/>
 
                     </VBox>
 

@@ -44,7 +44,7 @@
                     <VBox alignment="CENTER_LEFT">
                         <Label text="Hollow Knight"/>
 
-                        <Text fx:id="descripcionHK" wrappingWidth="300"/>
+                        <Text fx:id="descripcionHK" id="descripcion" wrappingWidth="300"/>
 
                     </VBox>
 
